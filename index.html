@@ -1,940 +1,1337 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Teaching Portfolio 2026</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Serif+Display:ital@0;1&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Serif+Display:ital@0;1&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- ══ NAVBAR ══════════════════════════════════════════════════ -->
-<nav>
-  <div class="nav-logo" onclick="navigate('home')">
-    <div class="nav-logo-icon">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--green-mid)">
-        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
-        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
-      </svg>
-    </div>
-    <div class="nav-logo-text">Teaching<br>Portfolio</div>
-  </div>
-  <div class="nav-links">
-    <button data-page="home"         onclick="navigate('home')"         class="active">Home</button>
-    <button data-page="introduction" onclick="navigate('introduction')">Introduction</button>
-    <button data-page="school"       onclick="navigate('school')">School &amp; Course</button>
-    <button data-page="udl"          onclick="navigate('udl')">UDL Designer</button>
-    <button data-page="diversity"    onclick="navigate('diversity')">Diversity</button>
-    <button data-page="classroom"    onclick="navigate('classroom')">Classroom Mgmt.</button>
-    <button data-page="counselor"    onclick="navigate('counselor')">Counselor</button>
-    <button data-page="reflection"   onclick="navigate('reflection')">Final Reflection</button>
-    <button data-page="evidence"     onclick="navigate('evidence')">Evidence</button>
-  </div>
-</nav>
-
-<!-- ══ PAGE: HOME ══════════════════════════════════════════════ -->
-<div id="page-home" class="page active">
-
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
-          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+  <!-- ══ NAVBAR ══════════════════════════════════════════════════ -->
+  <nav>
+    <div class="nav-logo" onclick="navigate('home')">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" style="color:var(--green-mid)">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z" />
+          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
         </svg>
-        Pre-Service Teacher · 2026
       </div>
-      <h1 class="hero-title">Reflective<br>Teaching<br><span class="italic-green">Portfolio 2026</span></h1>
-      <p class="hero-subtitle">Classroom Management for English Learning</p>
-      <p class="hero-desc">Welcome to my reflective teaching portfolio. This space documents my journey as a pre-service English teacher — exploring strategies, reflections, and evidence from my practicum experience.</p>
-      <div class="hero-buttons">
-        <button class="btn-primary" onclick="navigate('introduction')">
-          Explore Portfolio
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+      <div class="nav-logo-text">Teaching<br>Portfolio</div>
+    </div>
+    <div class="nav-links">
+      <button data-page="home" onclick="navigate('home')" class="active">Home</button>
+      <button data-page="introduction" onclick="navigate('introduction')">Introduction</button>
+      <button data-page="school" onclick="navigate('school')">School &amp; Course</button>
+      <button data-page="udl" onclick="navigate('udl')">UDL Designer</button>
+      <button data-page="diversity" onclick="navigate('diversity')">Diversity</button>
+      <button data-page="classroom" onclick="navigate('classroom')">Classroom Mgmt.</button>
+      <button data-page="counselor" onclick="navigate('counselor')">Counselor</button>
+      <button data-page="reflection" onclick="navigate('reflection')">Final Reflection</button>
+      <button data-page="evidence" onclick="navigate('evidence')">Evidence</button>
+    </div>
+  </nav>
+
+  <!-- ══ PAGE: HOME ══════════════════════════════════════════════ -->
+  <div id="page-home" class="page active">
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z" />
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
           </svg>
-        </button>
-        <button class="btn-secondary" onclick="navigate('evidence')">View Evidence</button>
+          Pre-Service Teacher · 2026
+        </div>
+        <h1 class="hero-title">Reflective<br>Teaching<br><span class="italic-green">Portfolio 2026</span></h1>
+        <p class="hero-subtitle">Classroom Management for English Learning</p>
+        <p class="hero-desc">Welcome to my reflective teaching portfolio. This space documents my journey as a
+          pre-service English teacher — exploring strategies, reflections, and evidence from my practicum experience.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="navigate('introduction')">
+            Explore Portfolio
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
+          <button class="btn-secondary" onclick="navigate('evidence')">View Evidence</button>
+        </div>
+      </div>
+
+      <div class="hero-profile">
+        <div class="profile-rect" style="cursor: default;">
+          <img src="assets/Foto_principal.jpeg" alt="Profile" />
+        </div>
+        <div class="profile-name">
+          <h3>Paula Rodríguez Leyton</h3>
+          <p>Pre-Service English Teacher</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome-section">
+      <div class="welcome-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+        </svg>
+      </div>
+      <h2>Welcome Message</h2>
+      <p>This portfolio represents my growth, challenges, and achievements during my teaching practicum. Each section
+        reflects a different dimension of my development as an English teacher — from understanding my students' needs
+        to designing inclusive lessons and managing a diverse classroom with care and intention.</p>
+      <p>I invite you to explore my reflections, lesson plans, and evidence of learning. Thank you for being part of
+        this journey.</p>
+    </section>
+
+    <section class="sections-area">
+      <h2>Portfolio Sections</h2>
+      <p class="subtitle">Navigate through each chapter of my teaching journey</p>
+      <div class="sections-grid">
+        <div class="section-card" onclick="navigate('introduction')">
+          <div class="section-num">01</div>
+          <h3>Introduction</h3>
+          <p>Biography &amp; teaching philosophy</p>
+        </div>
+        <div class="section-card" onclick="navigate('school')">
+          <div class="section-num">02</div>
+          <h3>School &amp; Course</h3>
+          <p>Context and institutional overview</p>
+        </div>
+        <div class="section-card" onclick="navigate('udl')">
+          <div class="section-num">03</div>
+          <h3>UDL Designer</h3>
+          <p>Universal Design for Learning</p>
+        </div>
+        <div class="section-card" onclick="navigate('diversity')">
+          <div class="section-num">04</div>
+          <h3>Diversity</h3>
+          <p>Inclusive &amp; differentiated instruction</p>
+        </div>
+        <div class="section-card" onclick="navigate('classroom')">
+          <div class="section-num">05</div>
+          <h3>Classroom Management</h3>
+          <p>Strategies &amp; interventions</p>
+        </div>
+        <div class="section-card" onclick="navigate('counselor')">
+          <div class="section-num">06</div>
+          <h3>Teacher as Counselor</h3>
+          <p>Guidance and student support</p>
+        </div>
+        <div class="section-card" onclick="navigate('reflection')">
+          <div class="section-num">07</div>
+          <h3>Final Reflection</h3>
+          <p>Synthesis and growth</p>
+        </div>
+        <div class="section-card" onclick="navigate('evidence')">
+          <div class="section-num">08</div>
+          <h3>Evidence</h3>
+          <p>Gallery of materials &amp; artifacts</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p>
+    </footer>
+  </div>
+
+  <!-- ══ PAGE: INTRODUCTION ══════════════════════════════════════ -->
+  <div id="page-introduction" class="page">
+    <div class="intro-page">
+      <div class="section-badge">SECTION 01</div>
+      <h2>Introduction</h2>
+      <p class="intro-lead"></p>
+
+      <!-- Biography -->
+      <div class="bio-row">
+        <div class="bio-left">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            Biography
+          </h3>
+          <p>Hello! My name is Paula Rodríguez and I am already in my fourth year of English Pedagogy major. </p>
+          <p>I have learnt that for designing a class you must consider many factors such as special needs,
+            characteristics of the students, environment, learning pace, learning styles, and many more.</p>
+          <p>I am passionate about learning the social emotional dimension of my students, because it is an essential
+            part in order to achieve our learning goals. I believe that teaching is not only about contents, but also
+            giving your students the chance to share a little of their world with you. In the end, you could be the
+            person who can help a student to become the person they aspire to be.</p>
+        </div>
+        <div>
+          <div class="bio-photo-area" style="cursor: default; border: none;">
+            <img src="assets/Foto_introPeei.jpeg" alt="Biography photo"
+              style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 16px;" />
+          </div>
+          <div class="bio-info-cards">
+            <div class="info-card">
+              <div class="info-label">University</div>
+              <div class="info-value"><span>San Sebastián</span></div>
+            </div>
+            <div class="info-card">
+              <div class="info-label">Program</div>
+              <div class="info-value"><span>English Program</span></div>
+            </div>
+            <div class="info-card">
+              <div class="info-label">Year</div>
+              <div class="info-value"><span>4th year</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-area">
+        <h3>Teaching Practice Reflection</h3>
+        <div class="reflection-grid">
+          <div class="reflection-card strengths">
+            <div class="rc-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <h4>Strengths</h4>
+            </div>
+            <p>Write about your teaching strengths here. What do you do well in the classroom? What natural abilities do
+              you bring to your students?</p>
+          </div>
+          <div class="reflection-card weaknesses">
+            <div class="rc-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+              <h4>Weaknesses</h4>
+            </div>
+            <p>Reflect honestly on areas for improvement. What challenges do you face? What aspects of teaching require
+              more development?</p>
+          </div>
+          <div class="reflection-card fears">
+            <div class="rc-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+              <h4>Fears</h4>
+            </div>
+            <p>What concerns or fears do you have as a pre-service teacher? How do these affect your practice and
+              professional growth?</p>
+          </div>
+          <div class="reflection-card expect">
+            <div class="rc-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" />
+              </svg>
+              <h4>Expectations</h4>
+            </div>
+            <p>What do you hope to achieve during your practicum? What kind of teacher do you aspire to become?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <div class="video-area">
+        <h3>Introduction Video</h3>
+        <video class="custom-video-player" controls preload="metadata">
+          <source src="assets/Video_intro.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de videos.
+        </video>
       </div>
     </div>
+    <footer>
+      <p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p>
+    </footer>
+  </div>
+  </div>
 
-    <div class="hero-profile">
-      <div class="profile-rect" style="cursor: default;">
-        <img src="assets/Foto_principal.jpeg" alt="Profile" />
+  <!-- ══ PAGES: Coming Soon ═══════════════════════════════════════ -->
+  <div id="page-school" class="page">
+    <div class="school-page">
+      <div class="section-badge">SECTION 02</div>
+      
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; margin-bottom: 60px;">
+        
+        <div style="flex: 1;">
+          <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(38px, 5vw, 56px); color: var(--text-dark); margin-bottom: 12px;">School &amp; Course Description</h2>
+          <p style="font-size: 15.5px; color: var(--text-light); line-height: 1.7; max-width: 700px; margin-bottom: 0;">An overview of the institutional context, community profile, and the specific English course I taught.</p>
+        </div>
+        
+        <a href="assets/ProyectoEducativo.pdf" target="_blank" class="btn-secondary" style="text-decoration: none; background-color: var(--green-light); border-color: var(--green-mid); color: var(--green-dark); font-weight: 700;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          PEI
+        </a>
       </div>
-      <div class="profile-name">
-        <h3>Paula Rodríguez Leyton</h3>
-        <p>Pre-Service English Teacher</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="welcome-section">
-    <div class="welcome-icon">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-      </svg>
-    </div>
-    <h2>Welcome Message</h2>
-    <p>This portfolio represents my growth, challenges, and achievements during my teaching practicum. Each section reflects a different dimension of my development as an English teacher — from understanding my students' needs to designing inclusive lessons and managing a diverse classroom with care and intention.</p>
-    <p>I invite you to explore my reflections, lesson plans, and evidence of learning. Thank you for being part of this journey.</p>
-  </section>
+      <div class="school-top-row">
+        
+        <div class="school-photo-area" style="cursor: default; border: none; min-height: auto; background: transparent;">
+          <img src="assets/Foto_colegio.jpeg" alt="School photo" style="display: block; width: 80%; height: auto; position: static; border-radius: 16px;" />
+        </div>
 
-  <section class="sections-area">
-    <h2>Portfolio Sections</h2>
-    <p class="subtitle">Navigate through each chapter of my teaching journey</p>
-    <div class="sections-grid">
-      <div class="section-card" onclick="navigate('introduction')"><div class="section-num">01</div><h3>Introduction</h3><p>Biography &amp; teaching philosophy</p></div>
-      <div class="section-card" onclick="navigate('school')"><div class="section-num">02</div><h3>School &amp; Course</h3><p>Context and institutional overview</p></div>
-      <div class="section-card" onclick="navigate('udl')"><div class="section-num">03</div><h3>UDL Designer</h3><p>Universal Design for Learning</p></div>
-      <div class="section-card" onclick="navigate('diversity')"><div class="section-num">04</div><h3>Diversity</h3><p>Inclusive &amp; differentiated instruction</p></div>
-      <div class="section-card" onclick="navigate('classroom')"><div class="section-num">05</div><h3>Classroom Management</h3><p>Strategies &amp; interventions</p></div>
-      <div class="section-card" onclick="navigate('counselor')"><div class="section-num">06</div><h3>Teacher as Counselor</h3><p>Guidance and student support</p></div>
-      <div class="section-card" onclick="navigate('reflection')"><div class="section-num">07</div><h3>Final Reflection</h3><p>Synthesis and growth</p></div>
-      <div class="section-card" onclick="navigate('evidence')"><div class="section-num">08</div><h3>Evidence</h3><p>Gallery of materials &amp; artifacts</p></div>
-    </div>
-  </section>
+        <div class="school-profile-container">
+          <h3>School Profile</h3>
+          <ul class="school-profile-list">
+            <li><span class="sp-label">School Name</span><span class="sp-value">Colegio Inmaculada Puerto Varas</span></li>
+            <li><span class="sp-label">Location / City</span><span class="sp-value">Puerto Varas, Chile</span></li>
+            <li><span class="sp-label">Type</span><span class="sp-value">Semi-Private</span></li>
+            <li><span class="sp-label">Grade Levels</span><span class="sp-value">From Pre-k to 12th Grade</span></li>
+            <li><span class="sp-label">Number of Students</span><span class="sp-value">1198 students</span></li>
+          </ul>
+        </div>
 
-  <footer><p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p></footer>
-</div>
+      </div> 
 
-<!-- ══ PAGE: INTRODUCTION ══════════════════════════════════════ -->
-<div id="page-introduction" class="page">
-  <div class="intro-page">
-    <div class="section-badge">SECTION 01</div>
-    <h2>Introduction</h2>
-    <p class="intro-lead"></p>
-
-    <!-- Biography -->
-    <div class="bio-row">
-      <div class="bio-left">
+      <div class="school-cards-grid">
+        <div class="sc-card">
+          <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+          <h4>Mission</h4>
+          <p>Formar estudiantes comprometidos con Jesucristo, María Inmaculada y su Iglesia, inspirado en el legado de la Beata Paulina Von Mallinckrodt, promoviendo en ellos competencias, autonomía, pensamiento reflexivo y el respeto a la diversidad, que les permita convertirse en personas integrales al servicio de los demás.</p>
+        </div>
+        <div class="sc-card">
+          <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h4>Vision</h4>
+          <p>Ser una comunidad educativa inclusiva, que eduque para la vida en excelencia valórica y académica, comprometida con la formación de personas integrales y consecuentes con la fe cristiana-católica, que les permita construir una sociedad más justa, fraterna y solidaria, a través de su vivencia familiar, eclesial y social.</p>
+        </div>
+        <div class="sc-card">
+          <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <h4>Objectives</h4>
+          <p>They focus on the holistic development of their students, combining academic excellence with a strong Christian and values-based education.</p>
+        </div>
+        <div class="sc-card">
+          <div class="sc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h4>Community</h4>
+          <p>The school community is warm and affectionate; every member is friendly, always greeting students and waiting for them at the entrance, which adds a special touch. They've created a truly positive atmosphere, and when it comes to teacher-student relationships, they appear to be fairly close.</p>
+        </div>
+      </div> <div class="course-profile-area" style="margin-bottom: 40px;">
         <h3>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-          </svg>
-          Biography
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Course Profile 1
         </h3>
-        <p>Hello! My name is Paula Rodríguez and I am already in my fourth year of English Pedagogy major. </p>
-        <p>I have learnt that for designing a class you must consider many factors such as special needs, characteristics of the students, environment, learning pace, learning styles, and many more.</p>
-        <p>I am passionate about learning the social emotional dimension of my students, because it is an essential part in order to achieve our learning goals. I believe that teaching is not only about contents, but also giving your students the chance to share a little of their world with you. In the end, you could be the person who can help a student to become the person they aspire to be.</p>
-      </div>
-      <div>
-        <div class="bio-photo-area" style="cursor: default; border: none;">
-          <img src="assets/Foto_introPeei.jpeg" alt="Biography photo" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 16px;" />
+        <div class="course-stats-grid">
+          <div class="c-stat-card"><div class="c-stat-label">Course Name</div><div class="c-stat-value">Idioma Extranjero Inglés</div></div>
+          <div class="c-stat-card"><div class="c-stat-label">Grade</div><div class="c-stat-value">6th Grade A</div></div>
+          <div class="c-stat-card"><div class="c-stat-label">Number of Students</div><div class="c-stat-value">44 students</div></div>
+          <div class="c-stat-card"><div class="c-stat-label">Weekly Hours</div><div class="c-stat-value">6 hours</div></div>
+          <div class="c-stat-card"><div class="c-stat-label">Language Proficiency Target</div><div class="c-stat-value">A2</div></div>
         </div>
-        <div class="bio-info-cards">
-          <div class="info-card">
-            <div class="info-label">University</div>
-            <div class="info-value"><span>San Sebastián</span></div>
-          </div>
-          <div class="info-card">
-            <div class="info-label">Program</div>
-            <div class="info-value"><span>English Program</span></div>
-          </div>
-          <div class="info-card">
-            <div class="info-label">Year</div>
-            <div class="info-value"><span>4th year</span></div>
-          </div>
+        <div class="course-desc-area">
+          <span class="c-desc-label">Course Description</span>
+          <p>6th grade A is a group of 44 students, 8 of whom have special educational needs. They are a very talkative class, and most of them find it difficult to pay attention. However, they always show a positive attitude toward the lesson and are quite excited to participate. Their interests lean toward drawing, various cartoons, and manipulable objects such as slime, dough, etc. The class uses the Oxford textbook "Learn with Us," and their current English level is A1 to A1+. They require many classroom management strategies due to their short attention spans, and a communicative approach is used for their instruction.</p>
         </div>
       </div>
-    </div>
 
-    <!-- Reflection -->
-    <div class="reflection-area">
-      <h3>Teaching Practice Reflection</h3>
-      <div class="reflection-grid">
-        <div class="reflection-card strengths">
-          <div class="rc-header">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <h4>Strengths</h4>
-          </div>
-          <p>Write about your teaching strengths here. What do you do well in the classroom? What natural abilities do you bring to your students?</p>
+      <div class="course-profile-area" style="margin-bottom: 60px;">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Course Profile 2
+        </h3>
+        <div class="course-stats-grid">
+          <div class="c-stat-card"><div class="c-stat-label">Course Name</div><div class="c-stat-value">Idioma Extranjero Inglés</div></div>
+          <div class="c-stat-card"><div class="c-stat-label">Grade</div><div class="c-stat-value">8th Grade B</div></div>
+          <div class="c-stat-card"><div class="c-stat-label">Number of Students</div><div class="c-stat-value">46 students</div></div>
+          <div class="c-stat-card"><div class="c-stat-label">Weekly Hours</div><div class="c-stat-value">6 hours</div></div>
+          <div class="c-stat-card"><div class="c-stat-label">Language Proficiency Target</div><div class="c-stat-value">A2</div></div>
         </div>
-        <div class="reflection-card weaknesses">
-          <div class="rc-header">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            <h4>Weaknesses</h4>
-          </div>
-          <p>Reflect honestly on areas for improvement. What challenges do you face? What aspects of teaching require more development?</p>
-        </div>
-        <div class="reflection-card fears">
-          <div class="rc-header">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            <h4>Fears</h4>
-          </div>
-          <p>What concerns or fears do you have as a pre-service teacher? How do these affect your practice and professional growth?</p>
-        </div>
-        <div class="reflection-card expect">
-          <div class="rc-header">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-            <h4>Expectations</h4>
-          </div>
-          <p>What do you hope to achieve during your practicum? What kind of teacher do you aspire to become?</p>
+        <div class="course-desc-area">
+          <span class="c-desc-label">Course Description</span>
+          <p>8th grade is a group made up of 46 students, 7 of whom have special educational needs. It is a large class, yet quite participative and well-behaved. Most of them have a good command of English and understand almost everything when spoken to in English. They show an interest in drawing, books, manga, Pokémon, and anime, as well as in the characters from "Sanrio." The majority have a visual learning style and show greater engagement in class when interactive games are involved. The teaching methodology used by the teacher is mostly the communicative approach, and she constantly interacts with her students. They work with a Macmillan textbook, and for the most part, their level is A2.</p>
         </div>
       </div>
-    </div>
 
-    <!-- Video -->
-    <div class="video-area">
-      <h3>Introduction Video</h3>
-      <video class="custom-video-player" controls preload="metadata">
-        <source src="assets/Video_intro.mp4" type="video/mp4">
-        Tu navegador no soporta la reproducción de videos.
-      </video>
-    </div>
-    </div>
-  <footer><p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p></footer>
+      <div class="school-video-section">
+        <h3>School Tour / Video</h3>
+        <div class="video-placeholder" id="schoolVideoPlaceholder">
+          <div class="video-play-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/>
+            </svg>
+          </div>
+          <span class="vid-label">Embed a video about the school context</span>
+          <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
+        </div>
+        <div class="video-embed-row">
+          <input type="text" id="schoolVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
+          <button onclick="embedSchoolVideo()">Embed</button>
+        </div>
+      </div>
+
+    </div> <footer>
+      <p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p>
+    </footer>
   </div>
-</div>
 
-<!-- ══ PAGES: Coming Soon ═══════════════════════════════════════ -->
-<div id="page-school" class="page">
-  <div class="school-page">
-    <div class="section-badge">SECTION 02</div>
-    <h2>School &amp; Course Description</h2>
-    <p class="intro-lead">An overview of the institutional context, community profile, and the specific English course I taught.</p>
+  <div id="page-udl" class="page">
+    <div class="udl-page">
+      <div class="section-badge">SECTION 03</div>
+      <h2>Teacher as a UDL Designer</h2>
+      <p class="intro-lead">Applying Universal Design for Learning principles to create accessible and flexible learning
+        experiences for all students.</p>
 
-    <div class="school-top-row">
-      <div class="school-photo-area" onclick="document.getElementById('schoolPhotoInput').click()" title="Click to upload school photo">
-        <div class="upload-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+      <h3 class="udl-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="18" y1="20" x2="18" y2="10" />
+          <line x1="12" y1="20" x2="12" y2="4" />
+          <line x1="6" y1="20" x2="6" y2="14" />
+        </svg>
+        UDL Principles Applied
+      </h3>
+      <div class="udl-principles-grid">
+        <div class="udl-card">
+          <span class="udl-card-badge">Principle 1</span>
+          <h4>Multiple Means of Representation</h4>
+          <p>How are students provided with different ways to access information? (visual, auditory, text-based)</p>
+          <p class="udl-impl" contenteditable="true">Write your specific implementation here...</p>
+        </div>
+        <div class="udl-card">
+          <span class="udl-card-badge">Principle 2</span>
+          <h4>Multiple Means of Action &amp; Expression</h4>
+          <p>How are students given options for demonstrating their learning and communicating ideas?</p>
+          <p class="udl-impl" contenteditable="true">Write your specific implementation here...</p>
+        </div>
+        <div class="udl-card">
+          <span class="udl-card-badge">Principle 3</span>
+          <h4>Multiple Means of Engagement</h4>
+          <p>How are students motivated and challenged to maintain interest and persistence in learning?</p>
+          <p class="udl-impl" contenteditable="true">Write your specific implementation here...</p>
+        </div>
+      </div>
+
+      <div class="survey-box">
+        <h3 class="udl-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+          Student Needs Survey
+        </h3>
+        <p class="survey-desc">Questionnaire applied to students to understand their learning preferences.</p>
+
+        <div class="survey-q-list">
+          <div class="survey-q"><span class="survey-q-num">Q1</span>
+            <p class="survey-q-text" contenteditable="true">How do you prefer to receive instructions? (visual, verbal,
+              written)</p>
+          </div>
+          <div class="survey-q"><span class="survey-q-num">Q2</span>
+            <p class="survey-q-text" contenteditable="true">What activities do you enjoy most in an English class?</p>
+          </div>
+          <div class="survey-q"><span class="survey-q-num">Q3</span>
+            <p class="survey-q-text" contenteditable="true">What technology tools do you use at home for learning?</p>
+          </div>
+          <div class="survey-q"><span class="survey-q-num">Q4</span>
+            <p class="survey-q-text" contenteditable="true">Do you have any learning needs or preferences your teacher
+              should know about?</p>
+          </div>
+          <div class="survey-q"><span class="survey-q-num">Q5</span>
+            <p class="survey-q-text" contenteditable="true">What are your goals for this English course?</p>
+          </div>
+        </div>
+        <span class="survey-footer">Add or modify the questions to match your actual survey instrument.</span>
+      </div>
+
+      <h3 class="udl-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="18" y1="20" x2="18" y2="10" />
+          <line x1="12" y1="20" x2="12" y2="4" />
+          <line x1="6" y1="20" x2="6" y2="14" />
+        </svg>
+        Class Profile Summary
+      </h3>
+      <div class="profile-stats-grid">
+        <div class="ps-card">
+          <div class="ps-value" contenteditable="true">—</div>
+          <div class="ps-label">Total Students</div>
+        </div>
+        <div class="ps-card">
+          <div class="ps-value" contenteditable="true">—</div>
+          <div class="ps-label">Visual Learners</div>
+        </div>
+        <div class="ps-card">
+          <div class="ps-value" contenteditable="true">—</div>
+          <div class="ps-label">Auditory Learners</div>
+        </div>
+        <div class="ps-card">
+          <div class="ps-value" contenteditable="true">—</div>
+          <div class="ps-label">Kinesthetic Learners</div>
+        </div>
+      </div>
+      <div class="narrative-card">
+        <span class="narrative-label">Narrative Summary</span>
+        <p contenteditable="true">Write a summary of your class profile based on survey results. Describe the diversity
+          of learning styles, any special needs identified, and how this information informed your lesson planning.</p>
+      </div>
+
+      <h3 class="udl-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="17 8 12 3 7 8" />
+          <line x1="12" y1="3" x2="12" y2="15" />
+        </svg>
+        Lesson Plans &amp; Materials
+      </h3>
+      <div class="materials-grid">
+        <div class="material-upload-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+          <span>Lesson Plan 1 — Upload here</span>
+        </div>
+        <div class="material-upload-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+          <span>Lesson Plan 2 — Upload here</span>
+        </div>
+        <div class="material-upload-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+          <span>Teaching Material 1 — Upload here</span>
+        </div>
+        <div class="material-upload-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+          <span>Teaching Material 2 — Upload here</span>
+        </div>
+      </div>
+
+      <div class="reflection-udl-box" style="margin-top: 60px;">
+        <h3 class="udl-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+          </svg>
+          Reflection on UDL
+        </h3>
+        <p class="ref-text" contenteditable="true">Write your reflection on applying UDL principles. How did the survey
+          results influence your lesson design? What accommodations did you make? What worked well and what would you
+          change?</p>
+
+        <div class="ref-footer">
+          <span class="ref-label">References</span>
+          <p class="ref-citations" contenteditable="true">Add your academic references here (APA format recommended).
+          </p>
+        </div>
+      </div>
+
+      <div class="school-video-section">
+        <div class="video-placeholder" id="udlVideoPlaceholder">
+          <div class="video-play-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="10 8 16 12 10 16 10 8" />
+            </svg>
+          </div>
+          <span class="vid-label">Embed a video related to your UDL implementation or lesson</span>
+          <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
+        </div>
+        <div class="video-embed-row">
+          <input type="text" id="udlVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
+          <button onclick="embedUdlVideo()">Embed</button>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p>
+    </footer>
+  </div>
+
+  <div id="page-diversity" class="page">
+    <div class="diversity-page">
+      <div class="section-badge">SECTION 04</div>
+      <h2>Diversity in the Classroom</h2>
+      <p class="intro-lead">Reflecting on inclusive strategies, differentiated instruction, and the richness that
+        diverse learners bring to the English classroom.</p>
+
+      <div class="context-box">
+        <h3 class="div-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          Classroom Context
+        </h3>
+        <p contenteditable="true">Describe the diversity present in your classroom. Consider linguistic diversity,
+          cultural backgrounds, learning differences, socioeconomic factors, and any other relevant dimensions of
+          difference that shaped your instructional decisions.</p>
+      </div>
+
+      <h3 class="div-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <polygon points="12 2 2 7 12 12 22 7 12 2" />
+          <polyline points="2 12 12 17 22 12" />
+          <polyline points="2 17 12 22 22 17" />
+        </svg>
+        Inclusive Strategies Used
+      </h3>
+      <div class="strategies-grid">
+        <div class="strat-card">
+          <h4>Differentiated Instruction</h4>
+          <p class="strat-desc">Describe how you adapted content, process, and product to meet diverse learner needs.
+          </p>
+          <p class="strat-impl" contenteditable="true">Write your specific example here...</p>
+        </div>
+        <div class="strat-card">
+          <h4>Cultural Responsiveness</h4>
+          <p class="strat-desc">How did you incorporate students' cultural backgrounds and funds of knowledge into
+            lessons?</p>
+          <p class="strat-impl" contenteditable="true">Write your specific example here...</p>
+        </div>
+        <div class="strat-card">
+          <h4>Collaborative Learning</h4>
+          <p class="strat-desc">Describe cooperative learning strategies used to leverage diversity as a classroom
+            asset.</p>
+          <p class="strat-impl" contenteditable="true">Write your specific example here...</p>
+        </div>
+        <div class="strat-card">
+          <h4>Scaffolding Techniques</h4>
+          <p class="strat-desc">What language and learning scaffolds did you provide for English language learners?</p>
+          <p class="strat-impl" contenteditable="true">Write your specific example here...</p>
+        </div>
+      </div>
+
+      <h3 class="div-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <line x1="16" y1="13" x2="8" y2="13" />
+          <line x1="16" y1="17" x2="8" y2="17" />
+          <polyline points="10 9 9 9 8 9" />
+        </svg>
+        Presentation / Supporting Material
+      </h3>
+      <div class="materials-photo-grid">
+        <div class="mat-photo-area" onclick="document.getElementById('divPhotoInput1').click()"
+          title="Click to upload slide">
+          <div class="upload-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg>
+          </div>
+          <span>Upload a slide or visual from your presentation on diversity</span>
+          <img id="divPhotoImg1" src="" alt="Slide 1" style="display:none" />
+        </div>
+        <input type="file" id="divPhotoInput1" style="display:none" accept="image/*"
+          onchange="loadDivPhoto(event, 'divPhotoImg1')" />
+
+        <div class="mat-photo-area" onclick="document.getElementById('divPhotoInput2').click()"
+          title="Click to upload supporting material">
+          <div class="upload-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg>
+          </div>
+          <span>Upload supporting material or classroom photo</span>
+          <img id="divPhotoImg2" src="" alt="Supporting material" style="display:none" />
+        </div>
+        <input type="file" id="divPhotoInput2" style="display:none" accept="image/*"
+          onchange="loadDivPhoto(event, 'divPhotoImg2')" />
+      </div>
+
+      <div class="reflection-div-box">
+        <h3 class="div-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+          </svg>
+          Reflection
+        </h3>
+        <p contenteditable="true">Reflect on the challenges and rewards of teaching a diverse class. What did you learn
+          from your students? How did managing diversity change your approach to lesson planning and classroom
+          interaction?</p>
+        <p contenteditable="true">What would you do differently to be more inclusive? What theory or framework supports
+          your reflection?</p>
+      </div>
+
+      <div class="school-video-section">
+        <div class="video-placeholder" id="diversityVideoPlaceholder">
+          <div class="video-play-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="10 8 16 12 10 16 10 8" />
+            </svg>
+          </div>
+          <span class="vid-label">Embed a video related to diversity and inclusive instruction</span>
+          <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
+        </div>
+        <div class="video-embed-row">
+          <input type="text" id="diversityVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
+          <button onclick="embedDiversityVideo()">Embed</button>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p>
+    </footer>
+  </div>
+
+  <div id="page-classroom" class="page">
+    <div class="classroom-page">
+      <div class="section-badge">SECTION 05</div>
+      <h2>Classroom Management Implementation</h2>
+      <p class="intro-lead">Two documented intervention cases showcasing strategies, skill integration, and inclusive
+        activities.</p>
+
+      <div class="phil-box">
+        <h3 class="mgmt-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          Management Philosophy
+        </h3>
+        <p contenteditable="true">Briefly describe your general approach to classroom management. What principles guide
+          your decisions? What kind of classroom environment do you aim to create for English language learners?</p>
+      </div>
+
+      <div class="case-card">
+        <div class="case-header">
+          <div class="case-badge">1</div>
+          <h3>Intervention Case 1</h3>
+        </div>
+        <div class="case-fields">
+          <div class="case-field-box">
+            <span class="case-label">Case Description</span>
+            <p contenteditable="true">Describe the situation or behavior that required intervention.</p>
+          </div>
+          <div class="case-field-box">
+            <span class="case-label">Strategies Applied</span>
+            <p contenteditable="true">What classroom management strategies did you use?</p>
+          </div>
+          <div class="case-field-box">
+            <span class="case-label">Skills Integration</span>
+            <p contenteditable="true">How did you integrate language skills (reading, writing, speaking, listening)
+              while managing this case?</p>
+          </div>
+          <div class="case-field-box">
+            <span class="case-label">Inclusive Activities Used</span>
+            <p contenteditable="true">What inclusive or differentiated activities did you use to re-engage the
+              student(s)?</p>
+          </div>
+          <div class="case-field-box">
+            <span class="case-label">Outcome</span>
+            <p contenteditable="true">What was the result? How did the student(s) respond?</p>
+          </div>
+        </div>
+        <span class="case-label">Supporting Image</span>
+        <div class="case-photo-area" onclick="document.getElementById('casePhotoInput1').click()"
+          title="Click to upload evidence">
+          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg></div>
+          <span>Upload evidence photo for Case 1</span>
+          <img id="casePhotoImg1" src="" alt="Case 1 Evidence" style="display:none" />
+        </div>
+        <input type="file" id="casePhotoInput1" style="display:none" accept="image/*"
+          onchange="loadGenericPhoto(event, 'casePhotoImg1')" />
+      </div>
+
+      <div class="case-card">
+        <div class="case-header">
+          <div class="case-badge">2</div>
+          <h3>Intervention Case 2</h3>
+        </div>
+        <div class="case-fields">
+          <div class="case-field-box">
+            <span class="case-label">Case Description</span>
+            <p contenteditable="true">Describe the situation or behavior that required intervention.</p>
+          </div>
+          <div class="case-field-box">
+            <span class="case-label">Strategies Applied</span>
+            <p contenteditable="true">What classroom management strategies did you use?</p>
+          </div>
+          <div class="case-field-box">
+            <span class="case-label">Skills Integration</span>
+            <p contenteditable="true">How did you integrate language skills (reading, writing, speaking, listening)
+              while managing this case?</p>
+          </div>
+          <div class="case-field-box">
+            <span class="case-label">Inclusive Activities Used</span>
+            <p contenteditable="true">What inclusive or differentiated activities did you use to re-engage the
+              student(s)?</p>
+          </div>
+          <div class="case-field-box">
+            <span class="case-label">Outcome</span>
+            <p contenteditable="true">What was the result? How did the student(s) respond?</p>
+          </div>
+        </div>
+        <span class="case-label">Supporting Image</span>
+        <div class="case-photo-area" onclick="document.getElementById('casePhotoInput2').click()"
+          title="Click to upload evidence">
+          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg></div>
+          <span>Upload evidence photo for Case 2</span>
+          <img id="casePhotoImg2" src="" alt="Case 2 Evidence" style="display:none" />
+        </div>
+        <input type="file" id="casePhotoInput2" style="display:none" accept="image/*"
+          onchange="loadGenericPhoto(event, 'casePhotoImg2')" />
+      </div>
+
+      <div class="reflection-mgmt-box">
+        <h3 class="mgmt-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+          </svg>
+          Reflection &amp; Improvements
+        </h3>
+        <p contenteditable="true">Reflect on both intervention cases together. What patterns did you notice? What would
+          you do differently next time? How did these experiences shape your understanding of classroom management in an
+          EFL context?</p>
+
+        <div class="improvements-box">
+          <span class="imp-label">Proposed Improvements</span>
+          <ul>
+            <li contenteditable="true">Improvement idea 1 — write here</li>
+            <li contenteditable="true">Improvement idea 2 — write here</li>
+            <li contenteditable="true">Improvement idea 3 — write here</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="mgmt-section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+          <circle cx="8.5" cy="8.5" r="1.5" />
+          <polyline points="21 15 16 10 5 21" />
+        </svg>
+        Gallery: Images, Lesson Plans &amp; Materials
+      </h3>
+      <div class="gallery-grid">
+        <div class="gallery-photo-area" onclick="document.getElementById('galInput1').click()">
+          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg></div>
+          <span>Upload image or material 1</span>
+          <img id="galImg1" src="" alt="Gallery 1" style="display:none" />
+        </div>
+        <input type="file" id="galInput1" style="display:none" accept="image/*"
+          onchange="loadGenericPhoto(event, 'galImg1')" />
+
+        <div class="gallery-photo-area" onclick="document.getElementById('galInput2').click()">
+          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg></div>
+          <span>Upload image or material 2</span>
+          <img id="galImg2" src="" alt="Gallery 2" style="display:none" />
+        </div>
+        <input type="file" id="galInput2" style="display:none" accept="image/*"
+          onchange="loadGenericPhoto(event, 'galImg2')" />
+
+        <div class="gallery-photo-area" onclick="document.getElementById('galInput3').click()">
+          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg></div>
+          <span>Upload image or material 3</span>
+          <img id="galImg3" src="" alt="Gallery 3" style="display:none" />
+        </div>
+        <input type="file" id="galInput3" style="display:none" accept="image/*"
+          onchange="loadGenericPhoto(event, 'galImg3')" />
+
+        <div class="gallery-photo-area" onclick="document.getElementById('galInput4').click()">
+          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg></div>
+          <span>Upload image or material 4</span>
+          <img id="galImg4" src="" alt="Gallery 4" style="display:none" />
+        </div>
+        <input type="file" id="galInput4" style="display:none" accept="image/*"
+          onchange="loadGenericPhoto(event, 'galImg4')" />
+
+        <div class="gallery-photo-area" onclick="document.getElementById('galInput5').click()">
+          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg></div>
+          <span>Upload image or material 5</span>
+          <img id="galImg5" src="" alt="Gallery 5" style="display:none" />
+        </div>
+        <input type="file" id="galInput5" style="display:none" accept="image/*"
+          onchange="loadGenericPhoto(event, 'galImg5')" />
+
+        <div class="gallery-photo-area" onclick="document.getElementById('galInput6').click()">
+          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg></div>
+          <span>Upload image or material 6</span>
+          <img id="galImg6" src="" alt="Gallery 6" style="display:none" />
+        </div>
+        <input type="file" id="galInput6" style="display:none" accept="image/*"
+          onchange="loadGenericPhoto(event, 'galImg6')" />
+      </div>
+
+    </div>
+    <footer>
+      <p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p>
+    </footer>
+  </div>
+
+  <div id="page-counselor" class="page">
+    <div class="counselor-page">
+      <div class="section-badge">SECTION 06</div>
+      <h2>Teacher as a Counselor</h2>
+      <p class="intro-lead">Exploring the guidance role of the teacher — supporting students emotionally, socially, and
+        academically through counseling-informed lesson design.</p>
+
+      <div class="couns-role-box">
+        <h3 class="couns-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+          </svg>
+          The Counselor Role in the Classroom
+        </h3>
+        <p contenteditable="true">Describe your understanding of the teacher as a counselor. What does this role mean in
+          the context of English language teaching? How does it differ from academic instruction?</p>
+        <p contenteditable="true">Include any theoretical framework or reading that supports your understanding (e.g.,
+          Carl Rogers, counseling-based approaches, Stevick's humanistic language teaching).</p>
+      </div>
+
+      <div class="lesson-plan-wrapper">
+        <h3 class="couns-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+          Counseling-Informed Lesson Plan
+        </h3>
+
+        <div class="lp-grid">
+          <div class="lp-field"><span class="lp-label">Lesson Title</span>
+            <p class="lp-value" contenteditable="true">Fill in here</p>
+          </div>
+          <div class="lp-field"><span class="lp-label">Grade / Level</span>
+            <p class="lp-value" contenteditable="true">Fill in here</p>
+          </div>
+          <div class="lp-field"><span class="lp-label">Main Objective</span>
+            <p class="lp-value" contenteditable="true">Fill in here</p>
+          </div>
+          <div class="lp-field"><span class="lp-label">Language Skills Addressed</span>
+            <p class="lp-value" contenteditable="true">Fill in here</p>
+          </div>
+          <div class="lp-field"><span class="lp-label">Counseling Theme</span>
+            <p class="lp-value" contenteditable="true">Fill in here</p>
+          </div>
+          <div class="lp-field"><span class="lp-label">Duration</span>
+            <p class="lp-value" contenteditable="true">Fill in here</p>
+          </div>
+          <div class="lp-field"><span class="lp-label">Materials Used</span>
+            <p class="lp-value" contenteditable="true">Fill in here</p>
+          </div>
+          <div class="lp-field"><span class="lp-label">Assessment Method</span>
+            <p class="lp-value" contenteditable="true">Fill in here</p>
+          </div>
+        </div>
+
+        <div class="lp-phases">
+          <div class="lp-phase-item">
+            <span class="lp-phase-title">Warm-up / Ice-breaker</span>
+            <p class="lp-phase-desc" contenteditable="true">Describe this phase of the lesson...</p>
+          </div>
+          <div class="lp-phase-item">
+            <span class="lp-phase-title">Main Activity</span>
+            <p class="lp-phase-desc" contenteditable="true">Describe this phase of the lesson...</p>
+          </div>
+          <div class="lp-phase-item">
+            <span class="lp-phase-title">Language Focus</span>
+            <p class="lp-phase-desc" contenteditable="true">Describe this phase of the lesson...</p>
+          </div>
+          <div class="lp-phase-item">
+            <span class="lp-phase-title">Emotional / Counseling Component</span>
+            <p class="lp-phase-desc" contenteditable="true">Describe this phase of the lesson...</p>
+          </div>
+          <div class="lp-phase-item">
+            <span class="lp-phase-title">Closure &amp; Reflection</span>
+            <p class="lp-phase-desc" contenteditable="true">Describe this phase of the lesson...</p>
+          </div>
+        </div>
+
+        <div class="lp-photo-area" onclick="document.getElementById('counsLpInput').click()"
+          title="Click to upload lesson plan">
+          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <polyline points="21 15 16 10 5 21" />
+            </svg></div>
+          <span>Upload lesson plan document or photo here</span>
+          <img id="counsLpImg" src="" alt="Lesson Plan Document" style="display:none" />
+        </div>
+        <input type="file" id="counsLpInput" style="display:none" accept="image/*"
+          onchange="loadGenericPhoto(event, 'counsLpImg')" />
+      </div>
+
+      <div class="couns-reflection-box">
+        <h3 class="couns-section-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+          </svg>
+          Reflection on the Headteacher Role
+        </h3>
+        <p contenteditable="true">Reflect on your experience acting as a headteacher or form tutor. What
+          responsibilities did this role entail? How did it complement or challenge your identity as an English teacher?
+        </p>
+        <p contenteditable="true">What did you learn about student wellbeing, pastoral care, and the relational aspects
+          of teaching? How will this experience shape your future practice?</p>
+      </div>
+
+      <div class="school-video-section">
+        <div class="video-placeholder" id="counselorVideoPlaceholder">
+          <div class="video-play-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="10 8 16 12 10 16 10 8" />
+            </svg>
+          </div>
+          <span class="vid-label">Embed a video related to your counselor role or lesson</span>
+          <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
+        </div>
+        <div class="video-embed-row">
+          <input type="text" id="counselorVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
+          <button onclick="embedCounselorVideo()">Embed</button>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p>
+    </footer>
+  </div>
+
+  <div id="page-reflection" class="page">
+    <div class="reflection-page">
+      <div class="section-badge">SECTION 07</div>
+      <h2>Final Reflection</h2>
+      <p class="intro-lead">A synthesis of my practicum journey — guided questions, personal insights, and a closing
+        video capsule.</p>
+
+      <div class="fr-intro-box">
+        <div class="fr-intro-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+            <polyline points="14 2 14 8 20 8" />
+            <path d="M12 18v-6" />
+            <path d="M9 15h6" />
           </svg>
         </div>
-        <span>Upload a photo of the school here</span>
-        <img id="schoolPhotoImg" src="" alt="School photo" style="display:none" />
+        <p>This final section brings together the threads of my portfolio. Through guided reflection, I revisit key
+          experiences, celebrate growth, and set intentions for my future as an English teacher.</p>
       </div>
-      <input type="file" id="schoolPhotoInput" style="display:none" accept="image/*" onchange="loadSchoolPhoto(event)" />
 
-      <div class="school-profile-container">
-        <h3>School Profile</h3>
-        <ul class="school-profile-list">
-          <li>
-            <span class="sp-label">School Name</span>
-            <span class="sp-value" contenteditable="true">Colegio Inmaculada Puerto Varas</span>
-          </li>
-          <li>
-            <span class="sp-label">Location / City</span>
-            <span class="sp-value" contenteditable="true">Colegio Inmaculada Puerto Varas</span>
-          </li>
-          <li>
-            <span class="sp-label">Type (Public / Private)</span>
-            <span class="sp-value" contenteditable="true">Colegio Inmaculada Puerto Varas</span>
-          </li>
-          <li>
-            <span class="sp-label">Grade Levels</span>
-            <span class="sp-value" contenteditable="true">Colegio Inmaculada Puerto Varas</span>
-          </li>
-          <li>
-            <span class="sp-label">Number of Students</span>
-            <span class="sp-value" contenteditable="true">Colegio Inmaculada Puerto Varas</span>
-          </li>
-        </ul>
+      <h3 class="fr-section-title">Guided Reflection Questions</h3>
+      <div class="fr-questions-list">
+
+        <details class="fr-details">
+          <summary class="fr-summary">
+            <span class="fr-q-badge">Q01</span>
+            <span class="fr-q-text">How has your understanding of teaching changed throughout this practicum?</span>
+            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </summary>
+          <div class="fr-answer-box">
+            <p contenteditable="true" placeholder="Write your reflection here...">Write your reflection here...</p>
+          </div>
+        </details>
+
+        <details class="fr-details">
+          <summary class="fr-summary">
+            <span class="fr-q-badge">Q02</span>
+            <span class="fr-q-text">What was the most significant challenge you faced and how did you overcome
+              it?</span>
+            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </summary>
+          <div class="fr-answer-box">
+            <p contenteditable="true">Write your reflection here...</p>
+          </div>
+        </details>
+
+        <details class="fr-details">
+          <summary class="fr-summary">
+            <span class="fr-q-badge">Q03</span>
+            <span class="fr-q-text">How did you apply UDL and inclusive practices in your classroom?</span>
+            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </summary>
+          <div class="fr-answer-box">
+            <p contenteditable="true">Write your reflection here...</p>
+          </div>
+        </details>
+
+        <details class="fr-details">
+          <summary class="fr-summary">
+            <span class="fr-q-badge">Q04</span>
+            <span class="fr-q-text">What does classroom management mean to you now, after this experience?</span>
+            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </summary>
+          <div class="fr-answer-box">
+            <p contenteditable="true">Write your reflection here...</p>
+          </div>
+        </details>
+
+        <details class="fr-details">
+          <summary class="fr-summary">
+            <span class="fr-q-badge">Q05</span>
+            <span class="fr-q-text">How did the counselor dimension of teaching appear in your practice?</span>
+            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </summary>
+          <div class="fr-answer-box">
+            <p contenteditable="true">Write your reflection here...</p>
+          </div>
+        </details>
+
+        <details class="fr-details">
+          <summary class="fr-summary">
+            <span class="fr-q-badge">Q06</span>
+            <span class="fr-q-text">What kind of teacher do you want to become and what steps will you take?</span>
+            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </summary>
+          <div class="fr-answer-box">
+            <p contenteditable="true">Write your reflection here...</p>
+          </div>
+        </details>
+
       </div>
+
+      <h3 class="fr-section-title">A Final Image</h3>
+      <div class="fr-photo-area" onclick="document.getElementById('finalPhotoInput').click()"
+        title="Click to upload image">
+        <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <circle cx="8.5" cy="8.5" r="1.5" />
+            <polyline points="21 15 16 10 5 21" />
+          </svg></div>
+        <span>Upload a meaningful photo from your practicum experience</span>
+        <img id="finalPhotoImg" src="" alt="Final Experience" style="display:none" />
+      </div>
+      <input type="file" id="finalPhotoInput" style="display:none" accept="image/*"
+        onchange="loadGenericPhoto(event, 'finalPhotoImg')" />
+
+      <h3 class="fr-section-title">Video Capsule</h3>
+      <div class="school-video-section">
+        <div class="video-placeholder" id="finalVideoPlaceholder">
+          <div class="video-play-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="10 8 16 12 10 16 10 8" />
+            </svg>
+          </div>
+          <span class="vid-label">Embed your closing reflection video or teaching capsule (max 5 min)</span>
+          <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
+        </div>
+        <div class="video-embed-row">
+          <input type="text" id="finalVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
+          <button onclick="embedFinalVideo()">Embed</button>
+        </div>
+      </div>
+
     </div>
-
-    <div class="school-cards-grid">
-      <div class="sc-card">
-        <div class="sc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-        </div>
-        <h4>Mission</h4>
-        <p contenteditable="true">Write the school's mission statement here. Describe the institution's core purpose and commitment to its students and community.</p>
-      </div>
-      <div class="sc-card">
-        <div class="sc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-        </div>
-        <h4>Vision</h4>
-        <p contenteditable="true">Describe the school's vision — where it aims to be in the future and the values that guide its educational direction.</p>
-      </div>
-      <div class="sc-card">
-        <div class="sc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-        </div>
-        <h4>Objectives</h4>
-        <p contenteditable="true">List the main educational objectives of the school. What academic and personal goals does the institution set for its students?</p>
-      </div>
-      <div class="sc-card">
-        <div class="sc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </div>
-        <h4>Community</h4>
-        <p contenteditable="true">Describe the school community: socioeconomic context, families, neighborhood, and any relevant characteristics of the student population.</p>
-      </div>
-    </div>
-
-    <div class="course-profile-area">
-      <h3>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-        Course Profile
-      </h3>
-      <div class="course-stats-grid">
-        <div class="c-stat-card"><div class="c-stat-label">Course Name</div><div class="c-stat-value" contenteditable="true">A2</div></div>
-        <div class="c-stat-card"><div class="c-stat-label">Grade / Level</div><div class="c-stat-value" contenteditable="true">A2</div></div>
-        <div class="c-stat-card"><div class="c-stat-label">Number of Students</div><div class="c-stat-value" contenteditable="true">A2</div></div>
-        <div class="c-stat-card"><div class="c-stat-label">Weekly Hours</div><div class="c-stat-value" contenteditable="true">A2</div></div>
-        <div class="c-stat-card"><div class="c-stat-label">Curriculum Framework</div><div class="c-stat-value" contenteditable="true">A2</div></div>
-        <div class="c-stat-card"><div class="c-stat-label">Language Proficiency Target</div><div class="c-stat-value" contenteditable="true">A2</div></div>
-      </div>
-      <div class="course-desc-area">
-        <span class="c-desc-label">Course Description</span>
-        <p contenteditable="true">Write a paragraph describing the English course: its goals, the skills addressed (reading, writing, listening, speaking), the textbook or materials used, and the general methodology applied.</p>
-      </div>
-    </div>
-
-    <div class="school-video-section">
-      <h3>School / Community Video</h3>
-      <div class="video-placeholder" id="schoolVideoPlaceholder">
-        <div class="video-play-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-        </div>
-        <span class="vid-label">Embed a video introducing the school or community context</span>
-        <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
-      </div>
-      <div class="video-embed-row">
-        <input type="text" id="schoolVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
-        <button onclick="embedSchoolVideo()">Embed</button>
-      </div>
-    </div>
-
+    <footer>
+      <p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p>
+    </footer>
   </div>
-  <footer><p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p></footer>
-</div>
 
-<div id="page-udl" class="page">
-  <div class="udl-page">
-    <div class="section-badge">SECTION 03</div>
-    <h2>Teacher as a UDL Designer</h2>
-    <p class="intro-lead">Applying Universal Design for Learning principles to create accessible and flexible learning experiences for all students.</p>
+  <div id="page-evidence" class="page">
+    <div class="evidence-page">
+      <div class="section-badge">SECTION 08</div>
+      <h2>Evidence Section</h2>
+      <p class="intro-lead">A curated gallery of images, videos, lesson plans, and materials collected throughout the
+        practicum.</p>
 
-    <h3 class="udl-section-title">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-      UDL Principles Applied
-    </h3>
-    <div class="udl-principles-grid">
-      <div class="udl-card">
-        <span class="udl-card-badge">Principle 1</span>
-        <h4>Multiple Means of Representation</h4>
-        <p>How are students provided with different ways to access information? (visual, auditory, text-based)</p>
-        <p class="udl-impl" contenteditable="true">Write your specific implementation here...</p>
-      </div>
-      <div class="udl-card">
-        <span class="udl-card-badge">Principle 2</span>
-        <h4>Multiple Means of Action &amp; Expression</h4>
-        <p>How are students given options for demonstrating their learning and communicating ideas?</p>
-        <p class="udl-impl" contenteditable="true">Write your specific implementation here...</p>
-      </div>
-      <div class="udl-card">
-        <span class="udl-card-badge">Principle 3</span>
-        <h4>Multiple Means of Engagement</h4>
-        <p>How are students motivated and challenged to maintain interest and persistence in learning?</p>
-        <p class="udl-impl" contenteditable="true">Write your specific implementation here...</p>
-      </div>
-    </div>
-
-    <div class="survey-box">
-      <h3 class="udl-section-title">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        Student Needs Survey
-      </h3>
-      <p class="survey-desc">Questionnaire applied to students to understand their learning preferences.</p>
-      
-      <div class="survey-q-list">
-        <div class="survey-q"><span class="survey-q-num">Q1</span><p class="survey-q-text" contenteditable="true">How do you prefer to receive instructions? (visual, verbal, written)</p></div>
-        <div class="survey-q"><span class="survey-q-num">Q2</span><p class="survey-q-text" contenteditable="true">What activities do you enjoy most in an English class?</p></div>
-        <div class="survey-q"><span class="survey-q-num">Q3</span><p class="survey-q-text" contenteditable="true">What technology tools do you use at home for learning?</p></div>
-        <div class="survey-q"><span class="survey-q-num">Q4</span><p class="survey-q-text" contenteditable="true">Do you have any learning needs or preferences your teacher should know about?</p></div>
-        <div class="survey-q"><span class="survey-q-num">Q5</span><p class="survey-q-text" contenteditable="true">What are your goals for this English course?</p></div>
-      </div>
-      <span class="survey-footer">Add or modify the questions to match your actual survey instrument.</span>
-    </div>
-
-    <h3 class="udl-section-title">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-      Class Profile Summary
-    </h3>
-    <div class="profile-stats-grid">
-      <div class="ps-card"><div class="ps-value" contenteditable="true">—</div><div class="ps-label">Total Students</div></div>
-      <div class="ps-card"><div class="ps-value" contenteditable="true">—</div><div class="ps-label">Visual Learners</div></div>
-      <div class="ps-card"><div class="ps-value" contenteditable="true">—</div><div class="ps-label">Auditory Learners</div></div>
-      <div class="ps-card"><div class="ps-value" contenteditable="true">—</div><div class="ps-label">Kinesthetic Learners</div></div>
-    </div>
-    <div class="narrative-card">
-      <span class="narrative-label">Narrative Summary</span>
-      <p contenteditable="true">Write a summary of your class profile based on survey results. Describe the diversity of learning styles, any special needs identified, and how this information informed your lesson planning.</p>
-    </div>
-
-    <h3 class="udl-section-title">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-      Lesson Plans &amp; Materials
-    </h3>
-    <div class="materials-grid">
-      <div class="material-upload-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-        <span>Lesson Plan 1 — Upload here</span>
-      </div>
-      <div class="material-upload-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-        <span>Lesson Plan 2 — Upload here</span>
-      </div>
-      <div class="material-upload-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-        <span>Teaching Material 1 — Upload here</span>
-      </div>
-      <div class="material-upload-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-        <span>Teaching Material 2 — Upload here</span>
-      </div>
-    </div>
-
-    <div class="reflection-udl-box" style="margin-top: 60px;">
-      <h3 class="udl-section-title">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        Reflection on UDL
-      </h3>
-      <p class="ref-text" contenteditable="true">Write your reflection on applying UDL principles. How did the survey results influence your lesson design? What accommodations did you make? What worked well and what would you change?</p>
-      
-      <div class="ref-footer">
-        <span class="ref-label">References</span>
-        <p class="ref-citations" contenteditable="true">Add your academic references here (APA format recommended).</p>
-      </div>
-    </div>
-
-    <div class="school-video-section">
-      <div class="video-placeholder" id="udlVideoPlaceholder">
-        <div class="video-play-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+      <div class="ev-toolbar">
+        <div class="ev-filters" id="evFilters">
+          <button class="ev-filter-btn active" data-filter="All">All</button>
+          <button class="ev-filter-btn" data-filter="Image">Image</button>
+          <button class="ev-filter-btn" data-filter="Video">Video</button>
+          <button class="ev-filter-btn" data-filter="Lesson Plan">Lesson Plan</button>
+          <button class="ev-filter-btn" data-filter="Material">Material</button>
+          <button class="ev-filter-btn" data-filter="Other">Other</button>
         </div>
-        <span class="vid-label">Embed a video related to your UDL implementation or lesson</span>
-        <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
+        <button class="btn-add-evidence" onclick="openEvModal()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+          Add Evidence
+        </button>
       </div>
-      <div class="video-embed-row">
-        <input type="text" id="udlVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
-        <button onclick="embedUdlVideo()">Embed</button>
-      </div>
-    </div>
 
+      <div class="ev-empty-state" id="evEmptyState">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="17 8 12 3 7 8" />
+          <line x1="12" y1="3" x2="12" y2="15" />
+        </svg>
+        <h4>No evidence items yet</h4>
+        <p>Click "Add Evidence" to start uploading your materials.</p>
+      </div>
+
+      <div class="ev-grid" id="evGrid"></div>
+
+    </div>
+    <footer>
+      <p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p>
+    </footer>
   </div>
-  <footer><p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p></footer>
-</div>
 
-<div id="page-diversity" class="page">
-  <div class="diversity-page">
-    <div class="section-badge">SECTION 04</div>
-    <h2>Diversity in the Classroom</h2>
-    <p class="intro-lead">Reflecting on inclusive strategies, differentiated instruction, and the richness that diverse learners bring to the English classroom.</p>
+  <div class="ev-modal-overlay" id="evModalOverlay">
+    <div class="ev-modal">
+      <h3>Add New Evidence</h3>
 
-    <div class="context-box">
-      <h3 class="div-section-title">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        Classroom Context
-      </h3>
-      <p contenteditable="true">Describe the diversity present in your classroom. Consider linguistic diversity, cultural backgrounds, learning differences, socioeconomic factors, and any other relevant dimensions of difference that shaped your instructional decisions.</p>
-    </div>
-
-    <h3 class="div-section-title">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 12 12 17 22 12"/><polyline points="2 17 12 22 22 17"/></svg>
-      Inclusive Strategies Used
-    </h3>
-    <div class="strategies-grid">
-      <div class="strat-card">
-        <h4>Differentiated Instruction</h4>
-        <p class="strat-desc">Describe how you adapted content, process, and product to meet diverse learner needs.</p>
-        <p class="strat-impl" contenteditable="true">Write your specific example here...</p>
-      </div>
-      <div class="strat-card">
-        <h4>Cultural Responsiveness</h4>
-        <p class="strat-desc">How did you incorporate students' cultural backgrounds and funds of knowledge into lessons?</p>
-        <p class="strat-impl" contenteditable="true">Write your specific example here...</p>
-      </div>
-      <div class="strat-card">
-        <h4>Collaborative Learning</h4>
-        <p class="strat-desc">Describe cooperative learning strategies used to leverage diversity as a classroom asset.</p>
-        <p class="strat-impl" contenteditable="true">Write your specific example here...</p>
-      </div>
-      <div class="strat-card">
-        <h4>Scaffolding Techniques</h4>
-        <p class="strat-desc">What language and learning scaffolds did you provide for English language learners?</p>
-        <p class="strat-impl" contenteditable="true">Write your specific example here...</p>
-      </div>
-    </div>
-
-    <h3 class="div-section-title">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-      Presentation / Supporting Material
-    </h3>
-    <div class="materials-photo-grid">
-      <div class="mat-photo-area" onclick="document.getElementById('divPhotoInput1').click()" title="Click to upload slide">
-        <div class="upload-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-        </div>
-        <span>Upload a slide or visual from your presentation on diversity</span>
-        <img id="divPhotoImg1" src="" alt="Slide 1" style="display:none" />
-      </div>
-      <input type="file" id="divPhotoInput1" style="display:none" accept="image/*" onchange="loadDivPhoto(event, 'divPhotoImg1')" />
-
-      <div class="mat-photo-area" onclick="document.getElementById('divPhotoInput2').click()" title="Click to upload supporting material">
-        <div class="upload-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-        </div>
-        <span>Upload supporting material or classroom photo</span>
-        <img id="divPhotoImg2" src="" alt="Supporting material" style="display:none" />
-      </div>
-      <input type="file" id="divPhotoInput2" style="display:none" accept="image/*" onchange="loadDivPhoto(event, 'divPhotoImg2')" />
-    </div>
-
-    <div class="reflection-div-box">
-      <h3 class="div-section-title">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        Reflection
-      </h3>
-      <p contenteditable="true">Reflect on the challenges and rewards of teaching a diverse class. What did you learn from your students? How did managing diversity change your approach to lesson planning and classroom interaction?</p>
-      <p contenteditable="true">What would you do differently to be more inclusive? What theory or framework supports your reflection?</p>
-    </div>
-
-    <div class="school-video-section">
-      <div class="video-placeholder" id="diversityVideoPlaceholder">
-        <div class="video-play-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-        </div>
-        <span class="vid-label">Embed a video related to diversity and inclusive instruction</span>
-        <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
-      </div>
-      <div class="video-embed-row">
-        <input type="text" id="diversityVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
-        <button onclick="embedDiversityVideo()">Embed</button>
-      </div>
-    </div>
-
-  </div>
-  <footer><p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p></footer>
-</div>
-
-<div id="page-classroom" class="page">
-  <div class="classroom-page">
-    <div class="section-badge">SECTION 05</div>
-    <h2>Classroom Management Implementation</h2>
-    <p class="intro-lead">Two documented intervention cases showcasing strategies, skill integration, and inclusive activities.</p>
-
-    <div class="phil-box">
-      <h3 class="mgmt-section-title">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Management Philosophy
-      </h3>
-      <p contenteditable="true">Briefly describe your general approach to classroom management. What principles guide your decisions? What kind of classroom environment do you aim to create for English language learners?</p>
-    </div>
-
-    <div class="case-card">
-      <div class="case-header">
-        <div class="case-badge">1</div>
-        <h3>Intervention Case 1</h3>
-      </div>
-      <div class="case-fields">
-        <div class="case-field-box">
-          <span class="case-label">Case Description</span>
-          <p contenteditable="true">Describe the situation or behavior that required intervention.</p>
-        </div>
-        <div class="case-field-box">
-          <span class="case-label">Strategies Applied</span>
-          <p contenteditable="true">What classroom management strategies did you use?</p>
-        </div>
-        <div class="case-field-box">
-          <span class="case-label">Skills Integration</span>
-          <p contenteditable="true">How did you integrate language skills (reading, writing, speaking, listening) while managing this case?</p>
-        </div>
-        <div class="case-field-box">
-          <span class="case-label">Inclusive Activities Used</span>
-          <p contenteditable="true">What inclusive or differentiated activities did you use to re-engage the student(s)?</p>
-        </div>
-        <div class="case-field-box">
-          <span class="case-label">Outcome</span>
-          <p contenteditable="true">What was the result? How did the student(s) respond?</p>
-        </div>
-      </div>
-      <span class="case-label">Supporting Image</span>
-      <div class="case-photo-area" onclick="document.getElementById('casePhotoInput1').click()" title="Click to upload evidence">
-        <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-        <span>Upload evidence photo for Case 1</span>
-        <img id="casePhotoImg1" src="" alt="Case 1 Evidence" style="display:none" />
-      </div>
-      <input type="file" id="casePhotoInput1" style="display:none" accept="image/*" onchange="loadGenericPhoto(event, 'casePhotoImg1')" />
-    </div>
-
-    <div class="case-card">
-      <div class="case-header">
-        <div class="case-badge">2</div>
-        <h3>Intervention Case 2</h3>
-      </div>
-      <div class="case-fields">
-        <div class="case-field-box">
-          <span class="case-label">Case Description</span>
-          <p contenteditable="true">Describe the situation or behavior that required intervention.</p>
-        </div>
-        <div class="case-field-box">
-          <span class="case-label">Strategies Applied</span>
-          <p contenteditable="true">What classroom management strategies did you use?</p>
-        </div>
-        <div class="case-field-box">
-          <span class="case-label">Skills Integration</span>
-          <p contenteditable="true">How did you integrate language skills (reading, writing, speaking, listening) while managing this case?</p>
-        </div>
-        <div class="case-field-box">
-          <span class="case-label">Inclusive Activities Used</span>
-          <p contenteditable="true">What inclusive or differentiated activities did you use to re-engage the student(s)?</p>
-        </div>
-        <div class="case-field-box">
-          <span class="case-label">Outcome</span>
-          <p contenteditable="true">What was the result? How did the student(s) respond?</p>
-        </div>
-      </div>
-      <span class="case-label">Supporting Image</span>
-      <div class="case-photo-area" onclick="document.getElementById('casePhotoInput2').click()" title="Click to upload evidence">
-        <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-        <span>Upload evidence photo for Case 2</span>
-        <img id="casePhotoImg2" src="" alt="Case 2 Evidence" style="display:none" />
-      </div>
-      <input type="file" id="casePhotoInput2" style="display:none" accept="image/*" onchange="loadGenericPhoto(event, 'casePhotoImg2')" />
-    </div>
-
-    <div class="reflection-mgmt-box">
-      <h3 class="mgmt-section-title">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        Reflection &amp; Improvements
-      </h3>
-      <p contenteditable="true">Reflect on both intervention cases together. What patterns did you notice? What would you do differently next time? How did these experiences shape your understanding of classroom management in an EFL context?</p>
-      
-      <div class="improvements-box">
-        <span class="imp-label">Proposed Improvements</span>
-        <ul>
-          <li contenteditable="true">Improvement idea 1 — write here</li>
-          <li contenteditable="true">Improvement idea 2 — write here</li>
-          <li contenteditable="true">Improvement idea 3 — write here</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="mgmt-section-title">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-      Gallery: Images, Lesson Plans &amp; Materials
-    </h3>
-    <div class="gallery-grid">
-      <div class="gallery-photo-area" onclick="document.getElementById('galInput1').click()">
-        <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-        <span>Upload image or material 1</span>
-        <img id="galImg1" src="" alt="Gallery 1" style="display:none" />
-      </div>
-      <input type="file" id="galInput1" style="display:none" accept="image/*" onchange="loadGenericPhoto(event, 'galImg1')" />
-
-      <div class="gallery-photo-area" onclick="document.getElementById('galInput2').click()">
-        <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-        <span>Upload image or material 2</span>
-        <img id="galImg2" src="" alt="Gallery 2" style="display:none" />
-      </div>
-      <input type="file" id="galInput2" style="display:none" accept="image/*" onchange="loadGenericPhoto(event, 'galImg2')" />
-
-      <div class="gallery-photo-area" onclick="document.getElementById('galInput3').click()">
-        <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-        <span>Upload image or material 3</span>
-        <img id="galImg3" src="" alt="Gallery 3" style="display:none" />
-      </div>
-      <input type="file" id="galInput3" style="display:none" accept="image/*" onchange="loadGenericPhoto(event, 'galImg3')" />
-
-      <div class="gallery-photo-area" onclick="document.getElementById('galInput4').click()">
-        <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-        <span>Upload image or material 4</span>
-        <img id="galImg4" src="" alt="Gallery 4" style="display:none" />
-      </div>
-      <input type="file" id="galInput4" style="display:none" accept="image/*" onchange="loadGenericPhoto(event, 'galImg4')" />
-
-      <div class="gallery-photo-area" onclick="document.getElementById('galInput5').click()">
-        <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-        <span>Upload image or material 5</span>
-        <img id="galImg5" src="" alt="Gallery 5" style="display:none" />
-      </div>
-      <input type="file" id="galInput5" style="display:none" accept="image/*" onchange="loadGenericPhoto(event, 'galImg5')" />
-
-      <div class="gallery-photo-area" onclick="document.getElementById('galInput6').click()">
-        <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-        <span>Upload image or material 6</span>
-        <img id="galImg6" src="" alt="Gallery 6" style="display:none" />
-      </div>
-      <input type="file" id="galInput6" style="display:none" accept="image/*" onchange="loadGenericPhoto(event, 'galImg6')" />
-    </div>
-
-  </div>
-  <footer><p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p></footer>
-</div>
-
-<div id="page-counselor" class="page">
-  <div class="counselor-page">
-    <div class="section-badge">SECTION 06</div>
-    <h2>Teacher as a Counselor</h2>
-    <p class="intro-lead">Exploring the guidance role of the teacher — supporting students emotionally, socially, and academically through counseling-informed lesson design.</p>
-
-    <div class="couns-role-box">
-      <h3 class="couns-section-title">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        The Counselor Role in the Classroom
-      </h3>
-      <p contenteditable="true">Describe your understanding of the teacher as a counselor. What does this role mean in the context of English language teaching? How does it differ from academic instruction?</p>
-      <p contenteditable="true">Include any theoretical framework or reading that supports your understanding (e.g., Carl Rogers, counseling-based approaches, Stevick's humanistic language teaching).</p>
-    </div>
-
-    <div class="lesson-plan-wrapper">
-      <h3 class="couns-section-title">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-        Counseling-Informed Lesson Plan
-      </h3>
-      
-      <div class="lp-grid">
-        <div class="lp-field"><span class="lp-label">Lesson Title</span><p class="lp-value" contenteditable="true">Fill in here</p></div>
-        <div class="lp-field"><span class="lp-label">Grade / Level</span><p class="lp-value" contenteditable="true">Fill in here</p></div>
-        <div class="lp-field"><span class="lp-label">Main Objective</span><p class="lp-value" contenteditable="true">Fill in here</p></div>
-        <div class="lp-field"><span class="lp-label">Language Skills Addressed</span><p class="lp-value" contenteditable="true">Fill in here</p></div>
-        <div class="lp-field"><span class="lp-label">Counseling Theme</span><p class="lp-value" contenteditable="true">Fill in here</p></div>
-        <div class="lp-field"><span class="lp-label">Duration</span><p class="lp-value" contenteditable="true">Fill in here</p></div>
-        <div class="lp-field"><span class="lp-label">Materials Used</span><p class="lp-value" contenteditable="true">Fill in here</p></div>
-        <div class="lp-field"><span class="lp-label">Assessment Method</span><p class="lp-value" contenteditable="true">Fill in here</p></div>
+      <div class="ev-form-group">
+        <label>Evidence Type</label>
+        <select id="evTypeInput">
+          <option value="Image">Image</option>
+          <option value="Video">Video</option>
+          <option value="Lesson Plan">Lesson Plan</option>
+          <option value="Material">Material</option>
+          <option value="Other">Other</option>
+        </select>
       </div>
 
-      <div class="lp-phases">
-        <div class="lp-phase-item">
-          <span class="lp-phase-title">Warm-up / Ice-breaker</span>
-          <p class="lp-phase-desc" contenteditable="true">Describe this phase of the lesson...</p>
-        </div>
-        <div class="lp-phase-item">
-          <span class="lp-phase-title">Main Activity</span>
-          <p class="lp-phase-desc" contenteditable="true">Describe this phase of the lesson...</p>
-        </div>
-        <div class="lp-phase-item">
-          <span class="lp-phase-title">Language Focus</span>
-          <p class="lp-phase-desc" contenteditable="true">Describe this phase of the lesson...</p>
-        </div>
-        <div class="lp-phase-item">
-          <span class="lp-phase-title">Emotional / Counseling Component</span>
-          <p class="lp-phase-desc" contenteditable="true">Describe this phase of the lesson...</p>
-        </div>
-        <div class="lp-phase-item">
-          <span class="lp-phase-title">Closure &amp; Reflection</span>
-          <p class="lp-phase-desc" contenteditable="true">Describe this phase of the lesson...</p>
-        </div>
+      <div class="ev-form-group">
+        <label>Title / Description</label>
+        <input type="text" id="evTitleInput" placeholder="e.g., UDL Lesson Activity 1" />
       </div>
 
-      <div class="lp-photo-area" onclick="document.getElementById('counsLpInput').click()" title="Click to upload lesson plan">
-        <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-        <span>Upload lesson plan document or photo here</span>
-        <img id="counsLpImg" src="" alt="Lesson Plan Document" style="display:none" />
+      <div class="ev-form-group">
+        <label>Upload File or Paste Link</label>
+        <input type="file" id="evFileInput" style="margin-bottom: 12px;" accept="image/*,.pdf" />
+        <input type="text" id="evLinkInput" placeholder="Or paste YouTube/Vimeo embed URL..." />
       </div>
-      <input type="file" id="counsLpInput" style="display:none" accept="image/*" onchange="loadGenericPhoto(event, 'counsLpImg')" />
-    </div>
 
-    <div class="couns-reflection-box">
-      <h3 class="couns-section-title">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-        Reflection on the Headteacher Role
-      </h3>
-      <p contenteditable="true">Reflect on your experience acting as a headteacher or form tutor. What responsibilities did this role entail? How did it complement or challenge your identity as an English teacher?</p>
-      <p contenteditable="true">What did you learn about student wellbeing, pastoral care, and the relational aspects of teaching? How will this experience shape your future practice?</p>
-    </div>
-
-    <div class="school-video-section">
-      <div class="video-placeholder" id="counselorVideoPlaceholder">
-        <div class="video-play-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-        </div>
-        <span class="vid-label">Embed a video related to your counselor role or lesson</span>
-        <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
+      <div class="ev-modal-actions">
+        <button class="btn-cancel" onclick="closeEvModal()">Cancel</button>
+        <button class="btn-submit" onclick="submitEvidence()">Add to Portfolio</button>
       </div>
-      <div class="video-embed-row">
-        <input type="text" id="counselorVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
-        <button onclick="embedCounselorVideo()">Embed</button>
-      </div>
-    </div>
-
-  </div>
-  <footer><p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p></footer>
-</div>
-
-<div id="page-reflection" class="page">
-  <div class="reflection-page">
-    <div class="section-badge">SECTION 07</div>
-    <h2>Final Reflection</h2>
-    <p class="intro-lead">A synthesis of my practicum journey — guided questions, personal insights, and a closing video capsule.</p>
-
-    <div class="fr-intro-box">
-      <div class="fr-intro-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
-      </div>
-      <p>This final section brings together the threads of my portfolio. Through guided reflection, I revisit key experiences, celebrate growth, and set intentions for my future as an English teacher.</p>
-    </div>
-
-    <h3 class="fr-section-title">Guided Reflection Questions</h3>
-    <div class="fr-questions-list">
-      
-      <details class="fr-details">
-        <summary class="fr-summary">
-          <span class="fr-q-badge">Q01</span>
-          <span class="fr-q-text">How has your understanding of teaching changed throughout this practicum?</span>
-          <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-        </summary>
-        <div class="fr-answer-box">
-          <p contenteditable="true" placeholder="Write your reflection here...">Write your reflection here...</p>
-        </div>
-      </details>
-
-      <details class="fr-details">
-        <summary class="fr-summary">
-          <span class="fr-q-badge">Q02</span>
-          <span class="fr-q-text">What was the most significant challenge you faced and how did you overcome it?</span>
-          <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-        </summary>
-        <div class="fr-answer-box">
-          <p contenteditable="true">Write your reflection here...</p>
-        </div>
-      </details>
-
-      <details class="fr-details">
-        <summary class="fr-summary">
-          <span class="fr-q-badge">Q03</span>
-          <span class="fr-q-text">How did you apply UDL and inclusive practices in your classroom?</span>
-          <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-        </summary>
-        <div class="fr-answer-box">
-          <p contenteditable="true">Write your reflection here...</p>
-        </div>
-      </details>
-
-      <details class="fr-details">
-        <summary class="fr-summary">
-          <span class="fr-q-badge">Q04</span>
-          <span class="fr-q-text">What does classroom management mean to you now, after this experience?</span>
-          <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-        </summary>
-        <div class="fr-answer-box">
-          <p contenteditable="true">Write your reflection here...</p>
-        </div>
-      </details>
-
-      <details class="fr-details">
-        <summary class="fr-summary">
-          <span class="fr-q-badge">Q05</span>
-          <span class="fr-q-text">How did the counselor dimension of teaching appear in your practice?</span>
-          <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-        </summary>
-        <div class="fr-answer-box">
-          <p contenteditable="true">Write your reflection here...</p>
-        </div>
-      </details>
-
-      <details class="fr-details">
-        <summary class="fr-summary">
-          <span class="fr-q-badge">Q06</span>
-          <span class="fr-q-text">What kind of teacher do you want to become and what steps will you take?</span>
-          <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-        </summary>
-        <div class="fr-answer-box">
-          <p contenteditable="true">Write your reflection here...</p>
-        </div>
-      </details>
-
-    </div>
-
-    <h3 class="fr-section-title">A Final Image</h3>
-    <div class="fr-photo-area" onclick="document.getElementById('finalPhotoInput').click()" title="Click to upload image">
-      <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-      <span>Upload a meaningful photo from your practicum experience</span>
-      <img id="finalPhotoImg" src="" alt="Final Experience" style="display:none" />
-    </div>
-    <input type="file" id="finalPhotoInput" style="display:none" accept="image/*" onchange="loadGenericPhoto(event, 'finalPhotoImg')" />
-
-    <h3 class="fr-section-title">Video Capsule</h3>
-    <div class="school-video-section">
-      <div class="video-placeholder" id="finalVideoPlaceholder">
-        <div class="video-play-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-        </div>
-        <span class="vid-label">Embed your closing reflection video or teaching capsule (max 5 min)</span>
-        <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
-      </div>
-      <div class="video-embed-row">
-        <input type="text" id="finalVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
-        <button onclick="embedFinalVideo()">Embed</button>
-      </div>
-    </div>
-
-  </div>
-  <footer><p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p></footer>
-</div>
-
-<div id="page-evidence" class="page">
-  <div class="evidence-page">
-    <div class="section-badge">SECTION 08</div>
-    <h2>Evidence Section</h2>
-    <p class="intro-lead">A curated gallery of images, videos, lesson plans, and materials collected throughout the practicum.</p>
-
-    <div class="ev-toolbar">
-      <div class="ev-filters" id="evFilters">
-        <button class="ev-filter-btn active" data-filter="All">All</button>
-        <button class="ev-filter-btn" data-filter="Image">Image</button>
-        <button class="ev-filter-btn" data-filter="Video">Video</button>
-        <button class="ev-filter-btn" data-filter="Lesson Plan">Lesson Plan</button>
-        <button class="ev-filter-btn" data-filter="Material">Material</button>
-        <button class="ev-filter-btn" data-filter="Other">Other</button>
-      </div>
-      <button class="btn-add-evidence" onclick="openEvModal()">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        Add Evidence
-      </button>
-    </div>
-
-    <div class="ev-empty-state" id="evEmptyState">
-      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-      <h4>No evidence items yet</h4>
-      <p>Click "Add Evidence" to start uploading your materials.</p>
-    </div>
-
-    <div class="ev-grid" id="evGrid"></div>
-
-  </div>
-  <footer><p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher</p></footer>
-</div>
-
-<div class="ev-modal-overlay" id="evModalOverlay">
-  <div class="ev-modal">
-    <h3>Add New Evidence</h3>
-    
-    <div class="ev-form-group">
-      <label>Evidence Type</label>
-      <select id="evTypeInput">
-        <option value="Image">Image</option>
-        <option value="Video">Video</option>
-        <option value="Lesson Plan">Lesson Plan</option>
-        <option value="Material">Material</option>
-        <option value="Other">Other</option>
-      </select>
-    </div>
-    
-    <div class="ev-form-group">
-      <label>Title / Description</label>
-      <input type="text" id="evTitleInput" placeholder="e.g., UDL Lesson Activity 1" />
-    </div>
-    
-    <div class="ev-form-group">
-      <label>Upload File or Paste Link</label>
-      <input type="file" id="evFileInput" style="margin-bottom: 12px;" accept="image/*,.pdf" />
-      <input type="text" id="evLinkInput" placeholder="Or paste YouTube/Vimeo embed URL..." />
-    </div>
-    
-    <div class="ev-modal-actions">
-      <button class="btn-cancel" onclick="closeEvModal()">Cancel</button>
-      <button class="btn-submit" onclick="submitEvidence()">Add to Portfolio</button>
     </div>
   </div>
-</div>
-<script src="script.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
+
 </html>

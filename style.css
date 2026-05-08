@@ -182,7 +182,7 @@ nav {
     min-height: calc(100vh - 68px);
     display: flex;
     align-items: center;
-    padding: 80px 80px 60px;
+    padding: 10px 80px 60px;
     background: linear-gradient(135deg, var(--green-pale) 0%, #eaf2ec 60%, var(--green-light) 100%);
     position: relative;
     overflow: hidden;
@@ -443,7 +443,7 @@ nav {
 /* ══ INTRODUCTION ══════════════════════════════════════════ */
 .intro-page {
     background: var(--white);
-    padding: 80px 80px 100px;
+    padding: 40px 80px 100px;
 }
 
 .section-badge {
@@ -789,7 +789,7 @@ nav {
 /* ══ SCHOOL & COURSE ═══════════════════════════════════════ */
 .school-page {
     background: var(--white);
-    padding: 80px 80px 100px;
+    padding: 40px 80px 100px;
 }
 
 .school-page>h2 {
@@ -812,7 +812,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
-    align-items: start;
+    align-items: center;
     margin-bottom: 60px;
 }
 
@@ -1069,7 +1069,7 @@ nav {
 /* ══ UDL DESIGNER ══════════════════════════════════════════ */
 .udl-page {
     background: var(--white);
-    padding: 80px 80px 100px;
+    padding: 40px 80px 100px;
 }
 
 .udl-page>h2 {
@@ -1402,7 +1402,7 @@ nav {
 /* ══ DIVERSITY ═════════════════════════════════════════════ */
 .diversity-page {
     background: var(--white);
-    padding: 80px 80px 100px;
+    padding: 40px 80px 100px;
 }
 
 .diversity-page>h2 {
@@ -1616,7 +1616,7 @@ nav {
 /* ══ CLASSROOM MANAGEMENT ══════════════════════════════════ */
 .classroom-page {
     background: var(--white);
-    padding: 80px 80px 100px;
+    padding: 40px 80px 100px;
 }
 
 .classroom-page>h2 {
@@ -1949,7 +1949,7 @@ nav {
 /* ══ COUNSELOR ═════════════════════════════════════════════ */
 .counselor-page {
     background: var(--white);
-    padding: 80px 80px 100px;
+    padding: 40px 80px 100px;
 }
 
 .counselor-page>h2 {
@@ -2205,7 +2205,7 @@ nav {
 /* ══ FINAL REFLECTION ══════════════════════════════════════ */
 .reflection-page {
     background: var(--white);
-    padding: 80px 80px 100px;
+    padding: 40px 80px 100px;
 }
 
 .reflection-page>h2 {
@@ -2426,7 +2426,7 @@ nav {
 /* ══ EVIDENCE SECTION & MODAL ══════════════════════════════ */
 .evidence-page {
     background: var(--white);
-    padding: 80px 80px 100px;
+    padding: 40px 80px 100px;
     min-height: calc(100vh - 68px);
 }
 

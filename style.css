@@ -1143,6 +1143,7 @@ nav {
     font-size: 14px;
     color: var(--text-light);
     line-height: 1.6;
+    text-align: justify;
 }
 
 .udl-card .udl-impl {

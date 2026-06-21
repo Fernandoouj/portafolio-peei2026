@@ -449,21 +449,10 @@
 
       <div class="school-video-section">
         <h3>School Tour / Video</h3>
-        <div class="video-placeholder" id="schoolVideoPlaceholder">
-          <div class="video-play-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <polygon points="10 8 16 12 10 16 10 8" />
-            </svg>
-          </div>
-          <span class="vid-label">Embed a video about the school context</span>
-          <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
-        </div>
-        <div class="video-embed-row">
-          <input type="text" id="schoolVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
-          <button onclick="embedSchoolVideo()">Embed</button>
-        </div>
+        <video class="custom-video-player" controls preload="metadata">
+          <source src="assets/VideoTour_School.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de videos.
+        </video>
       </div>
 
     </div>
@@ -676,7 +665,10 @@
         <div class="ref-footer">
           <span class="ref-label">References</span>
           <!-- Referencias fijas, cambiando el color rojo/cursiva por texto normal -->
-          <p class="ref-citations" style="font-style: normal; color: var(--text-mid); text-align: justify;">WRITE YOUR REFERENCES HERE (APA Format).</p>
+          <p class="ref-citations" style="font-style: normal; color: var(--text-mid); text-align: left; word-break: break-word;">
+            Vygotsky, L. (1978). Mind in Society: The Development of Higher Psychological Processes. Harvard University Press. 
+            <a href="https://w.pauldowling.me/rtf/2021.1/readings/LSVygotsky_1978_MindinSocietyDevelopmentofHigherPsycholo.pdf" target="_blank" style="color: var(--primary); text-decoration: underline;">https://w.pauldowling.me/rtf/2021.1/readings/LSVygotsky_1978_MindinSocietyDevelopmentofHigherPsycholo.pdf</a>
+          </p>
         </div>
       </div>
 
@@ -733,37 +725,16 @@
         Presentation / Supporting Material
       </h3>
       <div class="materials-photo-grid">
-        <div class="mat-photo-area" onclick="document.getElementById('divPhotoInput1').click()"
-          title="Click to upload slide">
-          <div class="upload-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-          </div>
-          <span>Upload a slide or visual from your presentation on diversity</span>
-          <img id="divPhotoImg1" src="" alt="Slide 1" style="display:none" />
+        <!-- Columna Izquierda: Diversity 1 y 3 apiladas -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <img src="assets/Diversity1.jpeg" alt="Diversity Presentation Slide 1" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow);" />
+          <img src="assets/Diversity3.jpeg" alt="Diversity Presentation Slide 3" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow);" />
         </div>
-        <input type="file" id="divPhotoInput1" style="display:none" accept="image/*"
-          onchange="loadDivPhoto(event, 'divPhotoImg1')" />
-
-        <div class="mat-photo-area" onclick="document.getElementById('divPhotoInput2').click()"
-          title="Click to upload supporting material">
-          <div class="upload-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-          </div>
-          <span>Upload supporting material or classroom photo</span>
-          <img id="divPhotoImg2" src="" alt="Supporting material" style="display:none" />
+        
+        <!-- Columna Derecha: Diversity 2 adaptándose al alto completo -->
+        <div style="height: 100%;">
+          <img src="assets/Diversity2.jpeg" alt="Diversity Supporting Material" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow);" />
         </div>
-        <input type="file" id="divPhotoInput2" style="display:none" accept="image/*"
-          onchange="loadDivPhoto(event, 'divPhotoImg2')" />
       </div>
 
     </div>
@@ -795,32 +766,14 @@
 Regarding our approach to inclusivity and diversity, we built fluency with graduated support for practice and performance, we had visual aids throughout the class, alongside the written information, which we shared orally as well, to provide them with multiple "media" for communication, we set meaningful goals and connected them to their prior knowledge to build new learning, as well as many other techniques, since we wanted to include as many descriptors of CAST's UDL guidelines, which call for multiple means of engagement, representation, as well as action and expression. This intentionality can be observed in our lesson plans, where each and every descriptor we included is written down.</p>
           </div>
           <div class="case-field-box">
-            <span class="case-label">Skills Integration</span>
-            <p style="font-style: normal; text-align: justify;">WRITE YOUR TEXT HERE. How did you integrate language skills (reading, writing, speaking, listening) while managing this case?</p>
-          </div>
-          <div class="case-field-box">
-            <span class="case-label">Inclusive Activities Used</span>
-            <p style="font-style: normal; text-align: justify;">WRITE YOUR TEXT HERE. What inclusive or differentiated activities did you use to re-engage the student(s)?</p>
-          </div>
-          <div class="case-field-box">
             <span class="case-label">Outcome</span>
             <p style="font-style: normal; text-align: justify;">This resulted in a successful class, where most students were not only engaged, but also learnt and had positive comments regarding the class itself. The class developed their oral skills, as well as their listening skills, when they had to not only understand what their classmates were saying, but they also had to puzzle the animals together in their heads with the vocabulary words given by us or their classmates.</p>
           </div>
         </div>
         <span class="case-label">Supporting Image</span>
-        <div class="case-photo-area" onclick="document.getElementById('casePhotoInput1').click()"
-          title="Click to upload evidence">
-          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg></div>
-          <span>Upload evidence photo for Case 1</span>
-          <img id="casePhotoImg1" src="" alt="Case 1 Evidence" style="display:none" />
+        <div style="margin-top: 16px; text-align: center;">
+          <img src="assets/Classroom1.jpeg" alt="Case 1 Evidence" style="width: 100%; max-width: 700px; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow);" />
         </div>
-        <input type="file" id="casePhotoInput1" style="display:none" accept="image/*"
-          onchange="loadGenericPhoto(event, 'casePhotoImg1')" />
       </div>
 
       <div class="case-card">
@@ -844,29 +797,15 @@ During the lesson we mostly used strategies that involved different techniques t
 Since this class was focused on identifying vocabulary, we mostly integrated listening and speaking, as our activities required students to listen to some descriptions and also say the vocabulary out loud. Due to the fact that they knew the class rules, whenever they wanted to speak, they had to raise their hand. Therefore, if they all started to say the answers out loud, we reminded them to raise their hand so that we could give them the right to speak. Moreover, when the activity in which they had to listen to descriptions was carried out, we actively checked their understanding and monitored whether everybody understood. In this way, we prevented potential issues or disruptions during the activity.</p>
           </div>
           <div class="case-field-box">
-            <span class="case-label">Inclusive Activities Used</span>
-            <p style="font-style: normal; text-align: justify;">WRITE YOUR TEXT HERE. What inclusive or differentiated activities did you use to re-engage the student(s)?</p>
-          </div>
-          <div class="case-field-box">
             <span class="case-label">Outcome</span>
             <p style="font-style: normal; text-align: justify;">What was the result? How did the student(s) respond?
 As mentioned before, this grade generally has good behavior, so by maintaining these dynamics to foster a positive classroom ambience, they will continue to have positive conduct. Finally, it is important to highlight that applying these techniques and activities helped them to be engaged and participative throughout the entire lesson, which is a positive response from the students. This aligns with Vygotsky's (1978) sociocultural theory, which suggests that learning can happen through social interaction and participation in meaningful activities.</p>
           </div>
         </div>
         <span class="case-label">Supporting Image</span>
-        <div class="case-photo-area" onclick="document.getElementById('casePhotoInput2').click()"
-          title="Click to upload evidence">
-          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg></div>
-          <span>Upload evidence photo for Case 2</span>
-          <img id="casePhotoImg2" src="" alt="Case 2 Evidence" style="display:none" />
+        <div style="margin-top: 16px; text-align: center;">
+          <img src="assets/Classroom2.jpeg" alt="Case 2 Evidence" style="width: 100%; max-width: 700px; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow);" />
         </div>
-        <input type="file" id="casePhotoInput2" style="display:none" accept="image/*"
-          onchange="loadGenericPhoto(event, 'casePhotoImg2')" />
       </div>
 
       <h3 class="mgmt-section-title">
@@ -973,93 +912,42 @@ As mentioned before, this grade generally has good behavior, so by maintaining t
       <h3 class="fr-section-title">Guided Reflection Questions</h3>
       <div class="fr-questions-list">
 
-        <details class="fr-details">
-          <summary class="fr-summary">
+        <div class="fr-details">
+          <div class="fr-summary" style="cursor: default;">
             <span class="fr-q-badge">Q01</span>
             <span class="fr-q-text">How has your understanding of teaching changed throughout this practicum?</span>
-            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </summary>
-          <div class="fr-answer-box">
-            <p contenteditable="true" placeholder="Write your reflection here...">Write your reflection here...</p>
           </div>
-        </details>
+        </div>
 
-        <details class="fr-details">
-          <summary class="fr-summary">
+        <div class="fr-details">
+          <div class="fr-summary" style="cursor: default;">
             <span class="fr-q-badge">Q02</span>
-            <span class="fr-q-text">What was the most significant challenge you faced and how did you overcome
-              it?</span>
-            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </summary>
-          <div class="fr-answer-box">
-            <p contenteditable="true">Write your reflection here...</p>
+            <span class="fr-q-text">What was the most significant challenge you faced and how did you overcome it?</span>
           </div>
-        </details>
+        </div>
 
-        <details class="fr-details">
-          <summary class="fr-summary">
+        <div class="fr-details">
+          <div class="fr-summary" style="cursor: default;">
             <span class="fr-q-badge">Q03</span>
             <span class="fr-q-text">How did you apply UDL and inclusive practices in your classroom?</span>
-            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </summary>
-          <div class="fr-answer-box">
-            <p contenteditable="true">Write your reflection here...</p>
           </div>
-        </details>
+        </div>
 
-        <details class="fr-details">
-          <summary class="fr-summary">
+        <div class="fr-details">
+          <div class="fr-summary" style="cursor: default;">
             <span class="fr-q-badge">Q04</span>
             <span class="fr-q-text">What does classroom management mean to you now, after this experience?</span>
-            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </summary>
-          <div class="fr-answer-box">
-            <p contenteditable="true">Write your reflection here...</p>
           </div>
-        </details>
+        </div>
 
-        <details class="fr-details">
-          <summary class="fr-summary">
+        <div class="fr-details">
+          <div class="fr-summary" style="cursor: default;">
             <span class="fr-q-badge">Q05</span>
-            <span class="fr-q-text">How did the counselor dimension of teaching appear in your practice?</span>
-            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </summary>
-          <div class="fr-answer-box">
-            <p contenteditable="true">Write your reflection here...</p>
-          </div>
-        </details>
-
-        <details class="fr-details">
-          <summary class="fr-summary">
-            <span class="fr-q-badge">Q06</span>
             <span class="fr-q-text">What kind of teacher do you want to become and what steps will you take?</span>
-            <svg class="fr-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </summary>
-          <div class="fr-answer-box">
-            <p contenteditable="true">Write your reflection here...</p>
           </div>
-        </details>
+        </div>
 
       </div>
-
       <h3 class="fr-section-title">A Final Image</h3>
       <div class="fr-photo-area" onclick="document.getElementById('finalPhotoInput').click()"
         title="Click to upload image">
@@ -1074,25 +962,6 @@ As mentioned before, this grade generally has good behavior, so by maintaining t
       </div>
       <input type="file" id="finalPhotoInput" style="display:none" accept="image/*"
         onchange="loadGenericPhoto(event, 'finalPhotoImg')" />
-
-      <h3 class="fr-section-title">Video Capsule</h3>
-      <div class="school-video-section">
-        <div class="video-placeholder" id="finalVideoPlaceholder">
-          <div class="video-play-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <polygon points="10 8 16 12 10 16 10 8" />
-            </svg>
-          </div>
-          <span class="vid-label">Embed your closing reflection video or teaching capsule (max 5 min)</span>
-          <span class="vid-hint">Paste a YouTube or Vimeo embed link</span>
-        </div>
-        <div class="video-embed-row">
-          <input type="text" id="finalVideoUrl" placeholder="Paste YouTube or Vimeo embed URL..." />
-          <button onclick="embedFinalVideo()">Embed</button>
-        </div>
-      </div>
 
     </div>
     <footer>
@@ -1111,10 +980,8 @@ As mentioned before, this grade generally has good behavior, so by maintaining t
         <div class="ev-filters" id="evFilters">
           <button class="ev-filter-btn active" data-filter="All">All</button>
           <button class="ev-filter-btn" data-filter="Image">Image</button>
-          <button class="ev-filter-btn" data-filter="Video">Video</button>
           <button class="ev-filter-btn" data-filter="Lesson Plan">Lesson Plan</button>
           <button class="ev-filter-btn" data-filter="Material">Material</button>
-          <button class="ev-filter-btn" data-filter="Other">Other</button>
         </div>
         <button class="btn-add-evidence" onclick="openEvModal()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -1153,10 +1020,8 @@ As mentioned before, this grade generally has good behavior, so by maintaining t
         <label>Evidence Type</label>
         <select id="evTypeInput">
           <option value="Image">Image</option>
-          <option value="Video">Video</option>
           <option value="Lesson Plan">Lesson Plan</option>
           <option value="Material">Material</option>
-          <option value="Other">Other</option>
         </select>
       </div>
 

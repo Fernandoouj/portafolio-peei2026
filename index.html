@@ -70,7 +70,8 @@
 
       <div class="hero-profile">
         <div class="profile-rect" style="cursor: default;">
-          <img src="assets/Foto_principal.jpeg" alt="Profile" />
+          <!-- Asegúrate de que el src tenga el nombre correcto de tu foto -->
+          <img src="assets/Foto_principal.jpeg" alt="Paula Rodríguez Leyton in the classroom" style="width: 100%; height: 350px; object-fit: cover; object-position: center top; border-radius: 24px; box-shadow: 0 8px 24px var(--shadow);" />
         </div>
         <div class="profile-name">
           <h3>Paula Rodríguez Leyton</h3>
@@ -817,84 +818,31 @@ As mentioned before, this grade generally has good behavior, so by maintaining t
         </svg>
         Gallery: Images, Lesson Plans &amp; Materials
       </h3>
-      <div class="gallery-grid">
-        <div class="gallery-photo-area" onclick="document.getElementById('galInput1').click()">
-          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg></div>
-          <span>Upload image or material 1</span>
-          <img id="galImg1" src="" alt="Gallery 1" style="display:none" />
+      <div class="materials-photo-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+        
+        <!-- Elemento 1: Foto Bingo -->
+        <div style="text-align: center;">
+          <img src="assets/Bingo_Classroom.jpeg" alt="Bingo Activity" style="width: 100%; height: 250px; object-fit: contain; background-color: #ffffff; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow);" />
         </div>
-        <input type="file" id="galInput1" style="display:none" accept="image/*"
-          onchange="loadGenericPhoto(event, 'galImg1')" />
 
-        <div class="gallery-photo-area" onclick="document.getElementById('galInput2').click()">
-          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg></div>
-          <span>Upload image or material 2</span>
-          <img id="galImg2" src="" alt="Gallery 2" style="display:none" />
+        <!-- Elemento 2: Foto Exit Ticket -->
+        <div style="text-align: center;">
+          <img src="assets/Exit_Classroom.jpeg" alt="Exit Ticket Activity" style="width: 100%; height: 250px; object-fit: contain; background-color: #ffffff; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow);" />
         </div>
-        <input type="file" id="galInput2" style="display:none" accept="image/*"
-          onchange="loadGenericPhoto(event, 'galImg2')" />
 
-        <div class="gallery-photo-area" onclick="document.getElementById('galInput3').click()">
-          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg></div>
-          <span>Upload image or material 3</span>
-          <img id="galImg3" src="" alt="Gallery 3" style="display:none" />
+        <!-- Elemento 3: Presentación (PDF) -->
+        <div style="text-align: center; transition: transform 0.2s;">
+          <a href="assets/Microteaching_Classroom.pdf" target="_blank" style="display: block; text-decoration: none;">
+            <div style="position: relative; width: 100%; height: 250px; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px var(--shadow);">
+              <!-- Esto muestra solo la primera página del PDF como portada -->
+              <iframe src="assets/Microteaching_Classroom.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0" style="width: 100%; height: 100%; border: none; pointer-events: none;"></iframe>
+              <!-- Capa invisible para detectar el clic y abrir el archivo en pantalla completa -->
+              <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></div>
+            </div>
+            <p style="margin-top: 12px; color: var(--primary); font-weight: 600;">Click to view the full presentation</p>
+          </a>
         </div>
-        <input type="file" id="galInput3" style="display:none" accept="image/*"
-          onchange="loadGenericPhoto(event, 'galImg3')" />
 
-        <div class="gallery-photo-area" onclick="document.getElementById('galInput4').click()">
-          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg></div>
-          <span>Upload image or material 4</span>
-          <img id="galImg4" src="" alt="Gallery 4" style="display:none" />
-        </div>
-        <input type="file" id="galInput4" style="display:none" accept="image/*"
-          onchange="loadGenericPhoto(event, 'galImg4')" />
-
-        <div class="gallery-photo-area" onclick="document.getElementById('galInput5').click()">
-          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg></div>
-          <span>Upload image or material 5</span>
-          <img id="galImg5" src="" alt="Gallery 5" style="display:none" />
-        </div>
-        <input type="file" id="galInput5" style="display:none" accept="image/*"
-          onchange="loadGenericPhoto(event, 'galImg5')" />
-
-        <div class="gallery-photo-area" onclick="document.getElementById('galInput6').click()">
-          <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg></div>
-          <span>Upload image or material 6</span>
-          <img id="galImg6" src="" alt="Gallery 6" style="display:none" />
-        </div>
-        <input type="file" id="galInput6" style="display:none" accept="image/*"
-          onchange="loadGenericPhoto(event, 'galImg6')" />
       </div>
 
     </div>
@@ -908,6 +856,19 @@ As mentioned before, this grade generally has good behavior, so by maintaining t
       <div class="section-badge">SECTION 06</div>
       <h2>Final Reflection</h2>
       <p class="intro-lead">A synthesis of my practicum journey.</p>
+
+      <div class="reflection-main-text" style="margin-top: 32px; margin-bottom: 48px; text-align: justify; line-height: 1.8; color: var(--text-main); font-size: 1.05rem;">
+        <p>Overall, this semester was an enriching and challenging experience. It helped me realize many factors that are highly relevant for improving teaching practices and developing as a future teacher. Looking back, one of the things I appreciate the most is the rapport that was built with the students. Even though we only had one class per week, we were able to create respectful and memorable bonds with them. Seeing that they felt confident enough to ask us questions and tell us about matters regarding their daily life is something that I highly appreciate and will remember from this experience.</p>
+        
+        <p style="margin-top: 16px;">At the same time, this practice helped me understand that teaching is a process in which there is always something new to learn. Throughout the semester, I faced different challenges, especially regarding classroom management. The first intervention with 6th grade was one of the most difficult situations because we were not as prepared as we should have been and did not reach the learning outcome we were expecting. However, thanks to the feedback from our mentor teachers, we were able to reflect upon our practice, adapt the material to the students’ needs, and improve our future lessons.</p>
+
+        <p style="margin-top: 16px;">Another aspect that I value from this experience is all the feedback and tips that our mentor teachers gave us. They made us reflect upon our own classes and showed us different techniques that will be useful in future teaching experiences. For instance, understanding that sometimes it is better to shorten the content but go deeper in the explanations, or identifying in which parts of our lesson plans the UDL is present, are tools that I have incorporated into my own practice.Another aspect that I value from this experience is all the feedback and tips that our mentor teachers gave us. They made us reflect upon our own classes and showed us different techniques that will be useful in future teaching experiences. For instance, understanding that sometimes it is better to shorten the content but go deeper in the explanations, or identifying in which parts of our lesson plans the UDL is present, are tools that I have incorporated into my own practice.</p>
+
+        <p style="margin-top: 16px;">I also had the opportunity to observe amazing teachers who inspired me in different ways. I admired how Teacher Paula teaches from the heart and how she refers to her students, while Mr. Kediyen showed creativity, knowledge, and different strategies for managing behavior in a positive way. These are qualities that I would like to imitate and continue developing throughout my professional career.
+</p>
+
+        <p style="margin-top: 16px;">Although I feel that I have reached some of the goals that I set at the beginning of the semester, I also believe that this journey is something that never ends. There is always space for improving and continuing to learn. I still need to keep working on classroom management, but overall, I feel that every intervention, challenge, and success contributed to my growth as a future teacher. Every experience helped me reflect upon my teaching practices, which is why I believe that all the interventions that we implemented will be useful for future teaching experiences.</p>
+      </div>
 
       <h3 class="fr-section-title">Guided Reflection Questions</h3>
       <div class="fr-questions-list">
@@ -949,19 +910,9 @@ As mentioned before, this grade generally has good behavior, so by maintaining t
 
       </div>
       <h3 class="fr-section-title">A Final Image</h3>
-      <div class="fr-photo-area" onclick="document.getElementById('finalPhotoInput').click()"
-        title="Click to upload image">
-        <div class="upload-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="18" height="18" rx="2" />
-            <circle cx="8.5" cy="8.5" r="1.5" />
-            <polyline points="21 15 16 10 5 21" />
-          </svg></div>
-        <span>Upload a meaningful photo from your practicum experience</span>
-        <img id="finalPhotoImg" src="" alt="Final Experience" style="display:none" />
-      </div>
-      <input type="file" id="finalPhotoInput" style="display:none" accept="image/*"
-        onchange="loadGenericPhoto(event, 'finalPhotoImg')" />
+      <div style="text-align: center; margin-top: 24px;">
+          <img src="assets/Final_reflection.jpeg" alt="Final Practicum Reflection" style="width: 100%; max-width: 600px; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow);" />
+        </div>
 
     </div>
     <footer>
@@ -976,36 +927,127 @@ As mentioned before, this grade generally has good behavior, so by maintaining t
       <p class="intro-lead">A curated gallery of images, videos, lesson plans, and materials collected throughout the
         practicum.</p>
 
-      <div class="ev-toolbar">
-        <div class="ev-filters" id="evFilters">
-          <button class="ev-filter-btn active" data-filter="All">All</button>
-          <button class="ev-filter-btn" data-filter="Image">Image</button>
-          <button class="ev-filter-btn" data-filter="Lesson Plan">Lesson Plan</button>
-          <button class="ev-filter-btn" data-filter="Material">Material</button>
+      <div class="ev-gallery" style="column-width: 280px; column-gap: 24px; margin-top: 32px;">
+        
+        <!-- EV1: PDF (Portada interactiva en 16:9) -->
+        <div style="transition: transform 0.2s; break-inside: avoid; margin-bottom: 24px; display: block; width: 100%;">
+          <a href="assets/Evidences/EV1.pdf" target="_blank" style="display: block; text-decoration: none; position: relative; width: 100%; aspect-ratio: 16/9; height: auto; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px var(--shadow);">
+            <iframe src="assets/Evidences/EV1.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0" style="width: 100%; height: 100%; border: none; pointer-events: none;"></iframe>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></div>
+            <div style="position: absolute; bottom: 12px; right: 12px; background: var(--primary); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">Abrir PDF</div>
+          </a>
         </div>
-        <button class="btn-add-evidence" onclick="openEvModal()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-            stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19" />
-            <line x1="5" y1="12" x2="19" y2="12" />
-          </svg>
-          Add Evidence
-        </button>
+
+        <!-- EV2 a EV8: Imágenes -->
+        <img src="assets/Evidences/EV2.jpeg" alt="Evidence 2" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <img src="assets/Evidences/EV3.jpeg" alt="Evidence 3" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <img src="assets/Evidences/EV4.jpeg" alt="Evidence 4" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <img src="assets/Evidences/EV5.jpeg" alt="Evidence 5" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <img src="assets/Evidences/EV6.jpeg" alt="Evidence 6" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <img src="assets/Evidences/EV7.jpeg" alt="Evidence 7" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <img src="assets/Evidences/EV8.jpeg" alt="Evidence 8" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <!-- EV9: Video interactivo -->
+        <video controls preload="metadata" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block; background: #000;">
+          <source src="assets/Evidences/EV9.MOV" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+
+        <!-- EV10 a EV13: Imágenes -->
+        <img src="assets/Evidences/EV10.jpeg" alt="Evidence 10" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <img src="assets/Evidences/EV11.jpeg" alt="Evidence 11" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <img src="assets/Evidences/EV12.jpeg" alt="Evidence 12" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <img src="assets/Evidences/EV13.jpeg" alt="Evidence 13" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+        <!-- ========================================== -->
+        <!-- ELEMENTOS ADICIONALES DEL PORTAFOLIO       -->
+        <!-- ========================================== -->
+
+        <!-- Video: School Tour -->
+        <video controls preload="metadata" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block; background: #000;">
+          <source src="assets/VideoTour_School.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+
+        <!-- Imagen: Bingo Classroom -->
+        <img src="assets/Bingo_Classroom.jpeg" alt="Bingo Activity" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <!-- Imagen: Exit Ticket Classroom -->
+        <img src="assets/Exit_Classroom.jpeg" alt="Exit Ticket Activity" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <!-- PDF: Microteaching Classroom (16:9) -->
+        <div style="transition: transform 0.2s; break-inside: avoid; margin-bottom: 24px; display: block; width: 100%;">
+          <a href="assets/Microteaching_Classroom.pdf" target="_blank" style="display: block; text-decoration: none; position: relative; width: 100%; aspect-ratio: 16/9; height: auto; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px var(--shadow);">
+            <iframe src="assets/Microteaching_Classroom.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0" style="width: 100%; height: 100%; border: none; pointer-events: none;"></iframe>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></div>
+            <div style="position: absolute; bottom: 12px; right: 12px; background: var(--primary); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">Abrir PDF</div>
+          </a>
+        </div>
+
+        <!-- Imagen: Diversity 1 -->
+        <img src="assets/Diversity1.jpeg" alt="Diversity in the Classroom 1" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <!-- Imagen: Diversity 2 -->
+        <img src="assets/Diversity2.jpeg" alt="Diversity in the Classroom 2" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+        
+        <!-- Imagen: Classroom General 1 -->
+        <img src="assets/Classroom1.jpeg" alt="Classroom Evidence 1" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <!-- Imagen: Classroom General 2 -->
+        <img src="assets/Classroom2.jpeg" alt="Classroom Evidence 2" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <!-- Imagen: Diversity 3 -->
+        <img src="assets/Diversity3.jpeg" alt="Diversity in the Classroom 3" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+        
+        <!-- Imagen: UDL -->
+        <img src="assets/student_need_survey.jpeg" alt="UDL Evidence" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
+
+        <!-- Documento 1: Lesson Plan o Material -->
+        <div style="transition: transform 0.2s; break-inside: avoid; margin-bottom: 24px; display: block; width: 100%;">
+          <a href="assets/Lesson1_udl.pdf" target="_blank" style="display: block; text-decoration: none; position: relative; width: 100%; aspect-ratio: 16/9; height: auto; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px var(--shadow);">
+            <iframe src="assets/Lesson1_udl.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0" style="width: 100%; height: 100%; border: none; pointer-events: none;"></iframe>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></div>
+            <div style="position: absolute; bottom: 12px; right: 12px; background: var(--primary); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">Abrir Documento</div>
+          </a>
+        </div>
+
+        <!-- Documento 2: Lesson Plan o Material -->
+        <div style="transition: transform 0.2s; break-inside: avoid; margin-bottom: 24px; display: block; width: 100%;">
+          <a href="assets/Lesson2_udl.pdf" target="_blank" style="display: block; text-decoration: none; position: relative; width: 100%; aspect-ratio: 16/9; height: auto; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px var(--shadow);">
+            <iframe src="assets/Lesson2_udl.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0" style="width: 100%; height: 100%; border: none; pointer-events: none;"></iframe>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></div>
+            <div style="position: absolute; bottom: 12px; right: 12px; background: var(--primary); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">Abrir Documento</div>
+          </a>
+        </div>
+
+        <!-- Documento 3: Teaching Material -->
+        <div style="transition: transform 0.2s; break-inside: avoid; margin-bottom: 24px; display: block; width: 100%;">
+          <a href="assets/material1_udl.pdf" target="_blank" style="display: block; text-decoration: none; position: relative; width: 100%; aspect-ratio: 16/9; height: auto; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px var(--shadow);">
+            <iframe src="assets/material1_udl.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0" style="width: 100%; height: 100%; border: none; pointer-events: none;"></iframe>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></div>
+            <div style="position: absolute; bottom: 12px; right: 12px; background: var(--primary); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">Abrir Documento</div>
+          </a>
+        </div>
+
+        <!-- Documento 4: Teaching Material -->
+        <div style="transition: transform 0.2s; break-inside: avoid; margin-bottom: 24px; display: block; width: 100%;">
+          <a href="assets/material2_udl.pdf" target="_blank" style="display: block; text-decoration: none; position: relative; width: 100%; aspect-ratio: 16/9; height: auto; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px var(--shadow);">
+            <iframe src="assets/material2_udl.pdf#page=1&toolbar=0&navpanes=0&scrollbar=0" style="width: 100%; height: 100%; border: none; pointer-events: none;"></iframe>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></div>
+            <div style="position: absolute; bottom: 12px; right: 12px; background: var(--primary); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">Abrir Documento</div>
+          </a>
+        </div>
+        <!-- Imagen: Final Reflection -->
+        <img src="assets/Final_reflection.jpeg" alt="Final Reflection" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px var(--shadow); break-inside: avoid; margin-bottom: 24px; display: block;" />
       </div>
-
-      <div class="ev-empty-state" id="evEmptyState">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-          <polyline points="17 8 12 3 7 8" />
-          <line x1="12" y1="3" x2="12" y2="15" />
-        </svg>
-        <h4>No evidence items yet</h4>
-        <p>Click "Add Evidence" to start uploading your materials.</p>
-      </div>
-
-      <div class="ev-grid" id="evGrid"></div>
-
     </div>
     <footer>
       <p>© 2026 <span>Reflective Teaching Portfolio</span> · Pre-Service English Teacher Paula Rodríguez Leyton</p>
